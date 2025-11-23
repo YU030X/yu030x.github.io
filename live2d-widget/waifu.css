@@ -1,0 +1,328 @@
+/* 看板娘切换按钮 */
+#waifu-toggle {
+	background-color: #fa0; /* 橙色背景 */
+	border-radius: 5px; /* 圆角边框 */
+	bottom: 66px; /* 距离底部66像素 */
+	color: #fff; /* 白色文字 */
+	cursor: pointer; /* 鼠标指针样式 */
+	font-size: 12px; /* 字体大小 */
+	left: 0; /* 左侧对齐 */
+	margin-left: -100px; /* 默认隐藏在左侧外 */
+	padding: 5px 2px 5px 5px; /* 内边距 */
+	position: fixed; /* 固定定位 */
+	transition: margin-left 1s; /* 左边距过渡动画1秒 */
+	width: 60px; /* 宽度 */
+	writing-mode: vertical-rl; /* 垂直文本，从右到左 */
+}
+
+/* 激活状态的切换按钮 */
+#waifu-toggle.waifu-toggle-active {
+	margin-left: -50px; /* 部分显示出来 */
+}
+
+/* 激活状态下鼠标悬停 */
+#waifu-toggle.waifu-toggle-active:hover {
+	margin-left: -30px; /* 更多地显示出来 */
+}
+
+/* 看板娘主容器 */
+#waifu {
+	bottom: -1000px; /* 初始位置在屏幕下方（隐藏） */
+	left: 0; /* 右侧对齐 */
+	line-height: 0; /* 行高为0 */
+	margin-bottom: -10px; /* 底部外边距 */
+	position: fixed; /* 固定定位 */
+	transform: translateY(3px); /* 默认向下偏移3像素 */
+	transition: transform .3s ease-in-out, bottom 3s ease-in-out; /* 变换和位置的过渡动画 */
+	z-index: 1; /* 层级 */
+}
+
+/* 鼠标悬停在看板娘上 */
+#waifu:hover {
+	transform: translateY(0); /* 恢复到原位置 */
+}
+
+/* 看板娘提示文本框 */
+#waifu-tips {
+	display: none;
+	animation: shake 50s ease-in-out 5s infinite; /* 震动动画：50秒周期，延迟5秒开始，无限循环 */
+	background-color: rgba(236, 217, 188, .5); /* 半透明米色背景 */
+	border: 1px solid rgba(224, 186, 140, .62); /* 边框颜色 */
+	border-radius: 12px; /* 文本框的圆角 */
+	box-shadow: 0 3px 15px 2px rgba(191, 158, 118, .2); /* 阴影效果 */
+	font-size: 14px; /* 字体大小 */
+	line-height: 24px; /* 行高（字间距）*/
+	margin: -25px 20px; /* 文本框位置调整 */
+	min-height: 70px; /* 文本框最小高度 */
+	opacity: 0; /* 默认透明（隐藏）*/
+	overflow: hidden; /* 溢出内容隐藏 */
+	padding: 5px 10px; /* 内边距 */
+	position: absolute; /* 绝对定位 */
+	text-overflow: ellipsis; /* 文本溢出显示省略号 */
+	transition: opacity 1s; /* 透明度过渡动画 */
+	width: 230px; /* 文本框宽度 */
+	word-break: break-all; /* 单词换行方式 */
+}
+
+/* 激活状态的提示文本框 */
+#waifu-tips.waifu-tips-active {
+	opacity: 1; /* 完全显示 */
+	transition: opacity .2s; /* 快速淡入 */
+}
+
+/* 提示文本框内的链接 */
+#waifu-tips span {
+	color: #0099cc; /* 蓝色文字 */
+}
+
+/* Live2D画布容器 */
+#live2d {
+	cursor: grab; /* 抓取光标样式 */
+	height: 300px; /* 高度 */
+	position: relative; /* 相对定位 */
+	width: 300px; /* 宽度 */
+}
+
+/* 点击拖动时的光标 */
+#live2d:active {
+	cursor: grabbing; /* 抓取中的光标样式 */
+}
+
+/* 工具栏容器 */
+#waifu-tool {
+	color: #aaa; /* 灰色 */
+	opacity: 0; /* 默认隐藏 */
+	position: absolute; /* 绝对定位 */
+	left: 50px; /* 距离左侧50像素 */
+	top: 100px; /* 距离顶部100像素 */
+	transition: opacity 1s; /* 透明度过渡动画 */
+}
+
+/* 鼠标悬停在看板娘上时显示工具栏 */
+#waifu:hover #waifu-tool {
+	opacity: 1; /* 完全显示 */
+}
+
+/* 工具栏图标 */
+#waifu-tool span {
+	display: block; /* 块级显示 */
+	height: 22px; /* 工具图标垂直排列的间距 */
+	text-align: center; /* 居中对齐 */
+}
+
+/* 工具栏SVG图标 */
+#waifu-tool svg {
+	fill: #7b8c9d; /* 默认填充颜色（灰蓝色）*/
+	cursor: pointer; /* 鼠标指针样式 */
+	height: 17px; /* 工具图标大小 */
+	transition: fill .3s; /* 填充颜色过渡动画 */
+}
+
+/* 鼠标悬停在工具图标上 */
+#waifu-tool svg:hover {
+	fill: #0684bd; /* 变为蓝色 */
+}
+
+/* 震动动画关键帧 */
+@keyframes shake {
+	2% {
+		transform: translate(.5px, -1.5px) rotate(-.5deg);
+	}
+
+	4% {
+		transform: translate(.5px, 1.5px) rotate(1.5deg);
+	}
+
+	6% {
+		transform: translate(1.5px, 1.5px) rotate(1.5deg);
+	}
+
+	8% {
+		transform: translate(2.5px, 1.5px) rotate(.5deg);
+	}
+
+	10% {
+		transform: translate(.5px, 2.5px) rotate(.5deg);
+	}
+
+	12% {
+		transform: translate(1.5px, 1.5px) rotate(.5deg);
+	}
+
+	14% {
+		transform: translate(.5px, .5px) rotate(.5deg);
+	}
+
+	16% {
+		transform: translate(-1.5px, -.5px) rotate(1.5deg);
+	}
+
+	18% {
+		transform: translate(.5px, .5px) rotate(1.5deg);
+	}
+
+	20% {
+		transform: translate(2.5px, 2.5px) rotate(1.5deg);
+	}
+
+	22% {
+		transform: translate(.5px, -1.5px) rotate(1.5deg);
+	}
+
+	24% {
+		transform: translate(-1.5px, 1.5px) rotate(-.5deg);
+	}
+
+	26% {
+		transform: translate(1.5px, .5px) rotate(1.5deg);
+	}
+
+	28% {
+		transform: translate(-.5px, -.5px) rotate(-.5deg);
+	}
+
+	30% {
+		transform: translate(1.5px, -.5px) rotate(-.5deg);
+	}
+
+	32% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+
+	34% {
+		transform: translate(2.5px, 2.5px) rotate(-.5deg);
+	}
+
+	36% {
+		transform: translate(.5px, -1.5px) rotate(.5deg);
+	}
+
+	38% {
+		transform: translate(2.5px, -.5px) rotate(-.5deg);
+	}
+
+	40% {
+		transform: translate(-.5px, 2.5px) rotate(.5deg);
+	}
+
+	42% {
+		transform: translate(-1.5px, 2.5px) rotate(.5deg);
+	}
+
+	44% {
+		transform: translate(-1.5px, 1.5px) rotate(.5deg);
+	}
+
+	46% {
+		transform: translate(1.5px, -.5px) rotate(-.5deg);
+	}
+
+	48% {
+		transform: translate(2.5px, -.5px) rotate(.5deg);
+	}
+
+	50% {
+		transform: translate(-1.5px, 1.5px) rotate(.5deg);
+	}
+
+	52% {
+		transform: translate(-.5px, 1.5px) rotate(.5deg);
+	}
+
+	54% {
+		transform: translate(-1.5px, 1.5px) rotate(.5deg);
+	}
+
+	56% {
+		transform: translate(.5px, 2.5px) rotate(1.5deg);
+	}
+
+	58% {
+		transform: translate(2.5px, 2.5px) rotate(.5deg);
+	}
+
+	60% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+
+	62% {
+		transform: translate(-1.5px, .5px) rotate(1.5deg);
+	}
+
+	64% {
+		transform: translate(-1.5px, 1.5px) rotate(1.5deg);
+	}
+
+	66% {
+		transform: translate(.5px, 2.5px) rotate(1.5deg);
+	}
+
+	68% {
+		transform: translate(2.5px, -1.5px) rotate(1.5deg);
+	}
+
+	70% {
+		transform: translate(2.5px, 2.5px) rotate(.5deg);
+	}
+
+	72% {
+		transform: translate(-.5px, -1.5px) rotate(1.5deg);
+	}
+
+	74% {
+		transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+	}
+
+	76% {
+		transform: translate(-1.5px, 2.5px) rotate(1.5deg);
+	}
+
+	78% {
+		transform: translate(-1.5px, 2.5px) rotate(.5deg);
+	}
+
+	80% {
+		transform: translate(-1.5px, .5px) rotate(-.5deg);
+	}
+
+	82% {
+		transform: translate(-1.5px, .5px) rotate(-.5deg);
+	}
+
+	84% {
+		transform: translate(-.5px, .5px) rotate(1.5deg);
+	}
+
+	86% {
+		transform: translate(2.5px, 1.5px) rotate(.5deg);
+	}
+
+	88% {
+		transform: translate(-1.5px, .5px) rotate(1.5deg);
+	}
+
+	90% {
+		transform: translate(-1.5px, -.5px) rotate(-.5deg);
+	}
+
+	92% {
+		transform: translate(-1.5px, -1.5px) rotate(1.5deg);
+	}
+
+	94% {
+		transform: translate(.5px, .5px) rotate(-.5deg);
+	}
+
+	96% {
+		transform: translate(2.5px, -.5px) rotate(-.5deg);
+	}
+
+	98% {
+		transform: translate(-1.5px, -1.5px) rotate(-.5deg);
+	}
+
+	/* 动画开始和结束时恢复原位 */
+	0%, 100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
