@@ -1730,7 +1730,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: "LXGW WenKai Screen", sans-serif;
+  font-family: Noto Sans SC;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -2026,7 +2026,7 @@ figure.highlight pre .javascript .function {
 .container pre,
 .container code {
   font-size: 14px;
-  font-family: "JetBrainsMapleMono-Regular", monospace !important;
+  font-family: JetBrainsMapleMono !important;
   border-radius: 6px;
 }
 .container code {
