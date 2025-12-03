@@ -5,7 +5,7 @@ import type { CardProps } from './List.astro'
 
 interface Props extends CardProps {}
 
-const { post }: Props = Astro.props
+const { post, baseUrl = '/posts' }: Props = Astro.props
 ---
 
 <div class="group relative block py-6 border-b border-border/60 last:border-none">
@@ -28,7 +28,7 @@ const { post }: Props = Astro.props
         )
       }
     </div>
-    <a href={`/posts/${post.id}`} class="block">
+    <a href={`${baseUrl}/${post.id}`} class="block">
       <div class="text-base font-semibold text-foreground leading-tight group-hover:text-primary transition-colors line-clamp-2">
         {post.data.title}
       </div>

@@ -46,3 +46,16 @@ export async function getAllProjects(): Promise<CollectionEntry<'projects'>[]> {
   const allProjects = await getCollection('projects')
   return allProjects.filter((project) => !project.data.draft)
 }
+
+// 获取所有非草稿文档，按时间排序
+export async function getAllDocs(): Promise<CollectionEntry<'docs'>[]> {
+  const allDocs = await getCollection('docs')
+  return allDocs
+    .filter((doc) => !doc.data.draft)
+    .slice()
+    .sort((a, b) => {
+      const dateA = a.data.updatedDate ?? a.data.pubDate
+      const dateB = b.data.updatedDate ?? b.data.pubDate
+      return new Date(dateB).getTime() - new Date(dateA).getTime()
+    })
+}

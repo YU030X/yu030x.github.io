@@ -248,8 +248,23 @@ export interface GitalkConfig {
   enableHotKey?: boolean
 }
 
+export interface GiscusConfig {
+  repo: string
+  repoId: string
+  category: string
+  categoryId: string
+  mapping: string
+  strict?: string
+  reactionsEnabled?: string
+  emitMetadata?: string
+  inputPosition?: string
+  theme?: string
+  lang?: string
+}
+
 export interface CommentConfig {
   enabled: boolean
-  system: 'gitalk' | 'artalk' | 'waline' | 'none'
+  system: 'gitalk' | 'giscus' | 'artalk' | 'waline' | 'none'
   gitalk?: GitalkConfig
+  giscus?: GiscusConfig
 }

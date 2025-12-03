@@ -22,9 +22,9 @@ const { label, icon, count, class: className, ...props }: Props = Astro.props
 >
   <span class={cn('h-6 w-6 text-muted-foreground transition group-hover:text-primary', icon)}></span>
   {
-    count !== undefined && (
+    (count !== undefined || label) && (
       <span class="text-muted-foreground text-sm group-hover:text-primary">
-        <NumberTicker play value={count} label={label} client:load />
+        {count !== undefined ? <NumberTicker play value={count} label={label} client:load /> : label}
       </span>
     )
   }
