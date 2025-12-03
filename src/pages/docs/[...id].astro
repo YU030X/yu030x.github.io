@@ -50,15 +50,15 @@ const PostLayout = layoutMap[layoutKey]
   image={frontmatter.ogImage?.src ? `${SITE.website}${frontmatter.ogImage.src}` : SITE.ogImage}
 >
   <div class="relative flex flex-col justify-between h-fit z-[1]">
-    <TocMobile {post} {posts} headings={filterHeadings} />
+    <TocMobile post={post as any} posts={posts as any} headings={filterHeadings} />
     <div transition:animate="none">
       <PostLayout {frontmatter} minutesRead={remarkPluginFrontmatter.minutesRead}>
         <Content />
       </PostLayout>
       <div class="px-6 sm:px-8 pb-6 sm:pb-8">
-        {posts.length > 1 && <PostNavigation {prev} {next} />}
+        {posts.length > 1 && <PostNavigation prev={prev as any} next={next as any} />}
       </div>
-      {hasValidHeadings && <PostFeatures {post} {posts} headings={filterHeadings} />}
+      {hasValidHeadings && <PostFeatures post={post as any} posts={posts as any} headings={filterHeadings} />}
     </div>
     <SectionDivider />
     <div class="px-6 py-6 sm:px-8 pb-6 sm:pb-8">
