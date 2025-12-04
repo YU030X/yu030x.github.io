@@ -1,0 +1,71 @@
+---
+import { COMMENT_CONFIG } from '~/config'
+
+interface Props {
+  id: string
+  title: string
+}
+
+const { id, title } = Astro.props
+const giscus = COMMENT_CONFIG.giscus!
+---
+
+<div id="giscus-container" data-page-id={id} data-page-title={title}></div>
+
+<script define:vars={{ giscus }}>
+  function loadGiscus() {
+    const container = document.getElementById('giscus-container')
+    if (!container) return
+
+    // 移除已有的 giscus 实例
+    const existing = container.querySelector('.giscus')
+    if (existing) {
+      existing.remove()
+    }
+
+    const script = document.createElement('script')
+    script.src = 'https://giscus.app/client.js'
+    script.setAttribute('data-repo', giscus.repo)
+    script.setAttribute('data-repo-id', giscus.repoId)
+    script.setAttribute('data-category', giscus.category)
+    script.setAttribute('data-category-id', giscus.categoryId)
+    script.setAttribute('data-mapping', giscus.mapping)
+    script.setAttribute('data-strict', giscus.strict || '0')
+    script.setAttribute('data-reactions-enabled', giscus.reactionsEnabled || '1')
+    script.setAttribute('data-emit-metadata', giscus.emitMetadata || '0')
+    script.setAttribute('data-input-position', giscus.inputPosition || 'top')
+    script.setAttribute('data-theme', giscus.theme || 'preferred_color_scheme')
+    script.setAttribute('data-lang', giscus.lang || 'zh-CN')
+    script.setAttribute('crossorigin', 'anonymous')
+    script.async = true
+
+    container.appendChild(script)
+  }
+
+  // 初始加载
+  loadGiscus()
+
+  // 页面切换时重新加载
+  document.addEventListener('astro:page-load', loadGiscus)
+
+  // 监听主题变化，更新 giscus 主题
+  const observer = new MutationObserver(() => {
+    const isDark = document.documentElement.classList.contains('dark')
+    const iframe = document.querySelector('iframe.giscus-frame')
+    if (iframe) {
+      const theme = isDark ? 'dark' : 'light'
+      iframe.contentWindow?.postMessage({ giscus: { setConfig: { theme } } }, 'https://giscus.app')
+    }
+  })
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['class'],
+  })
+</script>
+
+<style>
+  #giscus-container {
+    min-height: 200px;
+  }
+</style>

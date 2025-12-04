@@ -6,7 +6,7 @@ import CoverTop from '~/components/posts/layouts/CoverTop.astro'
 import PostNavigation from '~/components/posts/base/PostNavigation.astro'
 import PostFeatures from '~/components/posts/toc/PostFeatures.astro'
 import TocMobile from '~/components/posts/toc/TocMobile.astro'
-import { POSTS_CONFIG, SITE } from '~/config'
+import { DOCS_CONFIG, SITE } from '~/config'
 import { render } from 'astro:content'
 import { getAllDocs } from '~/lib/data'
 import SectionDivider from '~/components/base/SectionDivider.astro'
@@ -40,7 +40,7 @@ const layoutMap: Record<LayoutKey, any> = {
   coverTop: CoverTop,
 }
 
-const layoutKey: LayoutKey = (frontmatter.postType as LayoutKey) || (POSTS_CONFIG.postType as LayoutKey)
+const layoutKey: LayoutKey = (frontmatter.postType as LayoutKey) || (DOCS_CONFIG.postType as LayoutKey)
 const PostLayout = layoutMap[layoutKey]
 ---
 

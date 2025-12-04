@@ -1,5 +1,6 @@
 import type {
   CommentConfig,
+  DocsConfig,
   GithubConfig,
   Link,
   PhotoData,
@@ -233,10 +234,25 @@ export const PROJECTS_CONFIG: ProjectConfig = {
   introduce: 'The examples of my projects.',
 }
 
-export const DOCS_CONFIG: ProjectConfig = {
+export const DOCS_CONFIG: DocsConfig = {
   title: '文档',
   description: '技术文档和笔记',
   introduce: '这里是我的技术文档和学习笔记。',
+  author: 'YU030X',
+  pageConfig: {
+    size: 10,
+    type: 'image',
+    coverLayout: 'right',
+  },
+  postType: 'metaOnly',
+  ogImageUseCover: false,
+  readMoreText: '阅读更多',
+  prevPageText: '上一页',
+  nextPageText: '下一页',
+  tocText: '目录',
+  backText: '返回文档列表',
+  nextDocText: '下一篇',
+  prevDocText: '上一篇',
 }
 
 export const PHOTOS_CONFIG: PhotosConfig = {

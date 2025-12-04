@@ -62,6 +62,20 @@
     src: url('/fonts/GeistMono.woff2') format('woff2');
     font-display: swap;
   }
+
+  /* 代码字体 - JetBrains Maple Mono */
+  @font-face {
+    font-family: 'JetBrainsMapleMono';
+    src: url('/fonts/JetBrainsMapleMono-Regular.woff2') format('woff2');
+    font-display: swap;
+  }
+
+  /* 简介字体 - 平方长安 */
+  @font-face {
+    font-family: 'PingFangChangAn';
+    src: url('/fonts/pingfangchangan.woff2') format('woff2');
+    font-display: swap;
+  }
 }
 
 /* ===== 颜色变量 ===== */
@@ -71,6 +85,8 @@
     --font-lexend: 'Lexend', 'CJKEmDash', 'Numbers', 'ShangguSansSC-VF', ui-sans-serif, system-ui, sans-serif;
     --font-sans: 'CJKEmDash', 'Numbers', 'ShangguSansSC-VF', ui-sans-serif, system-ui, sans-serif;
     --font-geist-mono: 'GeistMono', 'Input Mono', 'Fira Code', 'ShangguSansSC-VF', monospace;
+    --font-code: 'JetBrainsMapleMono', 'GeistMono', 'Fira Code', monospace;
+    --font-intro: 'PingFangChangAn', 'ShangguSansSC-VF', ui-sans-serif, system-ui, sans-serif;
 
     /* 基础色调 */
     --background: 255 100% 100%;
@@ -160,6 +176,14 @@
   /* 工具类 */
   .pro {
     @apply prose prose-zinc dark:prose-invert;
+  }
+
+  /* 简介文字样式 - 使用平方长安字体 */
+  .intro-text {
+    font-family: var(--font-intro);
+    font-size: 1rem;
+    line-height: 1.8;
+    letter-spacing: 0.02em;
   }
 }
 

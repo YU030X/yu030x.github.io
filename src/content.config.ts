@@ -1,6 +1,6 @@
 import { glob } from 'astro/loaders'
 import { defineCollection, z } from 'astro:content'
-import { POSTS_CONFIG } from '~/config'
+import { POSTS_CONFIG, DOCS_CONFIG } from '~/config'
 import type { CoverLayout, PostType } from '~/types'
 
 const posts = defineCollection({
@@ -64,7 +64,7 @@ const docs = defineCollection({
         pubDate: z.date(),
         tags: z.array(z.string()).optional(),
         updatedDate: z.date().optional(),
-        author: z.string().default(POSTS_CONFIG.author),
+        author: z.string().default(DOCS_CONFIG.author),
         cover: image().optional(),
         ogImage: image().optional(),
         recommend: z.boolean().default(false),
@@ -75,7 +75,7 @@ const docs = defineCollection({
       })
       .transform((data) => ({
         ...data,
-        ogImage: POSTS_CONFIG.ogImageUseCover && data.cover ? data.cover : data.ogImage,
+        ogImage: DOCS_CONFIG.ogImageUseCover && data.cover ? data.cover : data.ogImage,
       })),
 })
 

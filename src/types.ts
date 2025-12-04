@@ -170,6 +170,41 @@ export interface ProjectConfig {
   introduce: string
 }
 
+/**
+ * 文档配置接口 / Docs configuration interface
+ * @description 用于配置文档页面相关的全局设置 / Used to configure global settings for docs
+ * @property {string} title - 文档标题 / Docs title
+ * @property {string} description - 文档描述 / Docs description
+ * @property {string} introduce - 文档介绍 / Docs introduce
+ * @property {string} author - 作者名称 / Author name
+ * @property {PostCardPageConfig} pageConfig - 文档列表页展示配置 / Docs list page display configuration
+ * @property {PostType} postType - 文档详情页布局类型 / Docs detail page layout type
+ * @property {boolean} ogImageUseCover - 是否使用文档封面图作为OGP图片 / Whether to use the doc cover image as the OGP image
+ * @property {string} readMoreText - "阅读更多"按钮文本 / "Read more" button text
+ * @property {string} prevPageText - 上一页按钮文本 / Previous page button text
+ * @property {string} nextPageText - 下一页按钮文本 / Next page button text
+ * @property {string} tocText - 目录文本 / Table of contents text
+ * @property {string} backText - 返回文档列表按钮文本 / Back to docs list button text
+ * @property {string} nextDocText - 下一篇文档按钮文本 / Next doc button text
+ * @property {string} prevDocText - 上一篇文档按钮文本 / Previous doc button text
+ */
+export interface DocsConfig {
+  title: string
+  description: string
+  introduce: string
+  author: string
+  pageConfig: PostCardPageConfig
+  postType: PostType
+  ogImageUseCover: boolean
+  readMoreText: string
+  prevPageText: string
+  nextPageText: string
+  tocText: string
+  backText: string
+  nextDocText: string
+  prevDocText: string
+}
+
 // 项目图标类型 / Project icon type
 export type IconType = 'icon' | 'image'
 

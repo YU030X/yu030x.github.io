@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths, Page } from 'astro'
 import type { CollectionEntry } from 'astro:content'
-import { POSTS_CONFIG, DOCS_CONFIG } from '~/config'
+import { DOCS_CONFIG } from '~/config'
 import { getAllDocs } from '~/lib/data'
 import Layout from '~/layouts/Layout.astro'
 import Pagination from '~/components/base/Pagination.astro'
@@ -11,7 +11,7 @@ export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const sortedDocs = await getAllDocs()
 
   return paginate(sortedDocs, {
-    pageSize: POSTS_CONFIG.postPageConfig.size,
+    pageSize: DOCS_CONFIG.pageConfig.size,
   })
 }
 
@@ -34,12 +34,7 @@ const { title, description, introduce } = DOCS_CONFIG
     </div>
 
     <div class="mt-12">
-      <List
-        posts={page.data as any}
-        type={POSTS_CONFIG.postPageConfig.type}
-        coverLayout={POSTS_CONFIG.postPageConfig?.coverLayout}
-        baseUrl="/docs"
-      />
+      <List posts={page.data as any} type={DOCS_CONFIG.pageConfig.type} coverLayout={DOCS_CONFIG.pageConfig?.coverLayout} baseUrl="/docs" />
     </div>
 
     <Pagination {page} baseUrl="/docs" />

@@ -275,7 +275,7 @@
     color: var(--color-text-inline-code);
     padding-block: 0.1rem;
     padding-inline: 0.3rem;
-    font-family: var(--font-geist-mono);
+    font-family: var(--font-code);
     font-size: 0.875em;
     word-wrap: break-word;
     font-weight: 500;
@@ -297,7 +297,7 @@
       font-weight: 400;
       color: inherit;
       font-size: inherit;
-      font-family: inherit;
+      font-family: var(--font-code);
       line-height: inherit;
 
       &::before,
