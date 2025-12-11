@@ -1,0 +1,62 @@
+filters:
+  and:
+    - file.ext == "md"
+properties:
+  note.pubDate:
+    displayName: Date
+  note.draft:
+    displayName: Draft
+views:
+  - type: bases-cms
+    name: Posts
+    filters:
+      and:
+        - file.folder.startsWith("posts")
+    order: []
+    sort:
+      - property: pubDate
+        direction: DESC
+    imageFormat: cover
+    titleProperty: note.title
+    dateProperty: note.pubDate
+    draftStatusProperty: note.draft
+    descriptionProperty: note.description
+    showTags: true
+    tagsProperty: note.tags
+    showDate: true
+    showDraftStatus: true
+    customizeNewButton: true
+    fallbackToEmbeds: always
+    newNoteLocation: /posts
+    cardSize: 220
+    imageAspectRatio: 0.5
+    imageProperty: note.cover
+    propertyLabels: hide
+    dateIncludeTime: false
+    draftStatusReverse: false
+    draftStatusUseFilenamePrefix: false
+    fallbackToContent: true
+  - type: bases-cms
+    name: Docs
+    filters:
+      and:
+        - file.folder.startsWith("docs")
+    rowHeight: tall
+    showTitle: true
+    fallbackToEmbeds: true
+    imageProperty: note.cover
+    showDate: true
+    dateProperty: note.pubDate
+    showDraftStatus: true
+    draftStatusProperty: note.draft
+    draftStatusReverse: false
+    draftStatusUseFilenamePrefix: false
+    showTextPreview: true
+    showTags: true
+    tagsProperty: note.tags
+    titleProperty: note.title
+    descriptionProperty: note.description
+    imageFormat: cover
+    customizeNewButton: true
+    newNoteLocation: /docs
+    cardSize: 220

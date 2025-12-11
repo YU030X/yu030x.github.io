@@ -14,13 +14,12 @@ import type {
 
 //--- Readme Page Config ---
 export const SITE: Site = {
-  title: 'Litos',
-  description:
-    'Litos is a modern blogging theme built on Astro.js, designed for developers. It supports multiple post layouts, photo displays, project displays, and more, providing an elegant user experience and powerful customization capabilities.',
-  website: 'https://litos.vercel.app/',
-  lang: 'en',
+  title: 'YU030X',
+  description: '记录学习与成长',
+  website: 'https://yu030x.github.io/',
+  lang: 'zh-CN',
   base: '/',
-  author: 'Dnzzk2',
+  author: 'YU030X',
   ogImage: '/og-image.webp',
   transition: false,
 }
@@ -67,19 +66,8 @@ export const FOOTER_LINKS: Link[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'github',
-    url: 'https://github.com/yourname',
+    url: 'https://github.com/YU030X',
     icon: 'icon-[ri--github-fill]',
-    count: 19,
-  },
-  {
-    name: 'twitter',
-    url: 'https://x.com/yourname',
-    icon: 'icon-[ri--twitter-x-fill]',
-  },
-  {
-    name: 'bilibili',
-    url: 'https://space.bilibili.com/yourSpaceId',
-    icon: 'icon-[ri--bilibili-fill]',
   },
 ]
 
@@ -94,7 +82,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
  * get icon https://icon-sets.iconify.design/
  */
 export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
-  SKILLS_ENABLED: true,
+  SKILLS_ENABLED: false,
   SKILLS_DATA: [
     {
       direction: 'left',
@@ -194,16 +182,16 @@ export const SKILLSSHOWCASE_CONFIG: SkillsShowcaseConfig = {
 
 export const GITHUB_CONFIG: GithubConfig = {
   ENABLED: true,
-  GITHUB_USERNAME: 'Dnzzk2',
+  GITHUB_USERNAME: 'YU030X',
   TOOLTIP_ENABLED: true,
 }
 
 //--- Posts Page Config ---
 export const POSTS_CONFIG: PostConfig = {
-  title: 'Posts',
-  description: 'Posts by Dnzzk2',
-  introduce: 'Here, I will share the usage instructions for this theme to help you quickly use it.',
-  author: 'Dnzzk2',
+  title: '文章',
+  description: 'YU030X 的文章',
+  introduce: '在这里分享我的学习笔记和技术文章',
+  author: 'YU030X',
   homePageConfig: {
     size: 5,
     type: 'compact',
@@ -220,18 +208,18 @@ export const POSTS_CONFIG: PostConfig = {
   ogImageUseCover: false,
   postType: 'metaOnly',
   imageDarkenInDark: true,
-  readMoreText: 'Read more',
-  prevPageText: 'Previous',
-  nextPageText: 'Next',
-  tocText: 'On this page',
-  backToPostsText: 'Back to Posts',
-  nextPostText: 'Next Post',
-  prevPostText: 'Previous Post',
-  recommendText: 'REC',
+  readMoreText: '阅读更多',
+  prevPageText: '上一页',
+  nextPageText: '下一页',
+  tocText: '目录',
+  backToPostsText: '返回文章列表',
+  nextPostText: '下一篇',
+  prevPostText: '上一篇',
+  recommendText: '推荐',
 }
 
 export const COMMENT_CONFIG: CommentConfig = {
-  enabled: true,
+  enabled: false,
   system: 'gitalk',
   gitalk: {
     clientID: import.meta.env.PUBLIC_GITHUB_CLIENT_ID,
@@ -249,21 +237,21 @@ export const COMMENT_CONFIG: CommentConfig = {
 }
 
 export const TAGS_CONFIG: TagsConfig = {
-  title: 'Tags',
-  description: 'All tags of Posts',
-  introduce: 'All the tags for posts are here, you can click to filter them.',
+  title: '标签',
+  description: '所有文章标签',
+  introduce: '这里是所有文章的标签，点击可以筛选。',
 }
 
 export const PROJECTS_CONFIG: ProjectConfig = {
-  title: 'Projects',
-  description: 'The examples of my projects.',
-  introduce: 'The examples of my projects.',
+  title: '项目',
+  description: '项目项目项目项目项目项目项目项目',
+  introduce: '项目项目项目项目项目项目项目项目',
 }
 
 export const PHOTOS_CONFIG: PhotosConfig = {
-  title: 'Photos',
-  description: 'Here I will record some photos taken in daily life.',
-  introduce: 'Here I will record some photos taken in daily life.',
+  title: '相册',
+  description: '记录生活中的美好瞬间',
+  introduce: '这里记录了一些日常生活中拍摄的照片。',
 }
 
 export const ANALYTICS_CONFIG: AnalyticsConfig = {

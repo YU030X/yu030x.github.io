@@ -13,9 +13,9 @@ export default defineEcConfig({
   minSyntaxHighlightingColorContrast: 0,
 
   styleOverrides: {
-    uiFontFamily: 'GeistMono, Input Mono, Fira Code, ShangguSansSCVF, monospace',
+    uiFontFamily: 'JetBrainsMapleMono, GeistMono, Input Mono, Fira Code, monospace',
     uiFontSize: '1em',
-    codeFontFamily: 'GeistMono, Input Mono, Fira Code, ShangguSansSCVF, monospace',
+    codeFontFamily: 'JetBrainsMapleMono, GeistMono, Input Mono, Fira Code, monospace',
     codeFontSize: '14px',
     codeLineHeight: '1.4',
     borderRadius: '0',
