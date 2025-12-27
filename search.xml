@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ISCTF2025 WP</title>
+      <link href="/2025/12/01/isctf2025-wp/"/>
+      <url>/2025/12/01/isctf2025-wp/</url>
+      
+        <content type="html"><![CDATA[<h2 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h2><h3 id="b-by-n0t1ce-b0ard"><a href="#b-by-n0t1ce-b0ard" class="headerlink" title="b@by n0t1ce b0ard"></a>b@by n0t1ce b0ard</h3><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232147878.png" alt="image-20251201232147878"></p><p>文章提示很明显：CVE-2024-12233</p><p>官方：<a href="https://github.com/LamentXU123/cve/blob/main/RCE1.md">https://github.com/LamentXU123/cve/blob/main/RCE1.md</a></p><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232241485.png" alt="image-20251201232241485"></p><p>根据poc解题</p><ol><li>注册账号</li><li>上传一句话</li><li>访问&#x2F;images&#x2F;<a href="mailto:&#120;&#x78;&#64;&#x78;&#x78;&#46;&#99;&#111;&#x6d;">&#120;&#x78;&#64;&#x78;&#x78;&#46;&#99;&#111;&#x6d;</a>&#x2F;xx.php?cmd&#x3D;xxx;</li></ol><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201232322551.png" alt="image-20251201232322551"></p><h3 id="难过的bottle"><a href="#难过的bottle" class="headerlink" title="难过的bottle"></a>难过的bottle</h3><p>源码：</p><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235713293.png" alt="image-20251201235713293"></p><p>查看源码发现，只剩a,f,g,l以及(),{}能用</p><p>这里可以通过全角字符绕过</p><p><code>&#123;&#123; ｏｐｅｎ('/flag').ｒｅａｄ() &#125;&#125;</code></p><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251201235959745.png" alt="image-20251201235959745"></p><p><img src="C:/Users/yuu/AppData/Roaming/Typora/typora-user-images/image-20251202000309530.png" alt="image-20251202000309530"></p><p>压缩成zip，上传即可得到flag</p><h3 id="题3"><a href="#题3" class="headerlink" title="题3"></a>题3</h3><h2 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h2><h3 id="Guess！"><a href="#Guess！" class="headerlink" title="Guess！"></a>Guess！</h3><p>用二分法，每次要猜的数不一样</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> ctf </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ctfshow-web题</title>
       <link href="/2025/11/19/ctfshow-web%E9%A2%98/"/>
       <url>/2025/11/19/ctfshow-web%E9%A2%98/</url>
