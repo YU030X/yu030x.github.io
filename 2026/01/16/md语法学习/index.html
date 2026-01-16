@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>markdown语法学习 | YU030X的小站</title><meta name="author" content="YU030X"><meta name="copyright" content="YU030X"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="article">
+<meta property="og:title" content="markdown语法学习">
+<meta property="og:url" content="https://yu030x.github.io/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="YU030X的小站">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%883.jpg">
+<meta property="article:published_time" content="2026-01-16T11:17:03.000Z">
+<meta property="article:modified_time" content="2026-01-16T15:42:48.899Z">
+<meta property="article:author" content="YU030X">
+<meta property="article:tag" content="语法">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%883.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "markdown语法学习",
+  "url": "https://yu030x.github.io/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/",
+  "image": "https://yu030x.github.io/img/%E5%BE%8B%E5%B8%883.jpg",
+  "datePublished": "2026-01-16T11:17:03.000Z",
+  "dateModified": "2026-01-16T15:42:48.899Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "YU030X",
+      "url": "https://YU030X.github.io"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://yu030x.github.io/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'markdown语法学习',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.6/index.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/css/barber-shop.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/%E8%83%8C%E6%99%AFthe%20castle2.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/%E5%BE%8B%E5%B8%883.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">YU030X的小站</span></a><a class="nav-page-title" href="/"><span class="site-name">markdown语法学习</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">markdown语法学习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-01-16T11:17:03.000Z" title="发表于 2026-01-16 19:17:03">2026-01-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-16T15:42:48.899Z" title="更新于 2026-01-16 23:42:48">2026-01-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">826</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url(/img/%E5%BE%8B%E5%B8%883.jpg);"></div><article class="container post-content" id="article-container"><h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><h3 id="1-文本样式与结构"><a href="#1-文本样式与结构" class="headerlink" title="1. 文本样式与结构"></a>1. 文本样式与结构</h3><table>
+<thead>
+<tr>
+<th><strong>功能</strong></th>
+<th><strong>语法示例</strong></th>
+<th><strong>效果</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>标题</strong></td>
+<td><code># 一级</code> … <code>###### 六级</code></td>
+<td>不同层级的标题</td>
+</tr>
+<tr>
+<td><strong>加粗</strong></td>
+<td><code>**文字**</code></td>
+<td><strong>文字</strong></td>
+</tr>
+<tr>
+<td><strong>斜体</strong></td>
+<td><code>*文字*</code></td>
+<td><em>文字</em></td>
+</tr>
+<tr>
+<td><strong>删除线</strong></td>
+<td><code>~~文字~~</code></td>
+<td><del>文字</del></td>
+</tr>
+<tr>
+<td><strong>引用</strong></td>
+<td><code>&gt; 引用内容</code> 、<code>&gt;&gt; 嵌套内容</code></td>
+<td>形成引用区块</td>
+</tr>
+<tr>
+<td><strong>分割线</strong></td>
+<td><code>---</code></td>
+<td>水平分割线</td>
+</tr>
+</tbody></table>
+<h3 id="2-列表与任务"><a href="#2-列表与任务" class="headerlink" title="2. 列表与任务"></a>2. 列表与任务</h3><ul>
+<li><strong>无序列表</strong>：使用 <code>-</code> 或 <code>*</code> 开头。</li>
+<li><strong>有序列表</strong>：使用 <code>1.</code> 开头。</li>
+<li><strong>任务列表</strong>：使用 <code>- [ ]</code> (未完成) 或 <code>- [x]</code> (已完成)。</li>
+</ul>
+<h3 id="3-链接与图片"><a href="#3-链接与图片" class="headerlink" title="3. 链接与图片"></a>3. 链接与图片</h3><ul>
+<li><strong>链接</strong>：<code>[显示文本](URL地址)</code></li>
+<li><strong>图片</strong>：<code>![替代文字](图片地址)</code></li>
+</ul>
+<h3 id="4-代码语法"><a href="#4-代码语法" class="headerlink" title="4.代码语法"></a>4.代码语法</h3><ul>
+<li><strong>代码块</strong>：`中间输入代码`</li>
+<li><strong>代码段</strong>：``` ```</li>
+</ul>
+<h3 id="5-Callout"><a href="#5-Callout" class="headerlink" title="5.Callout"></a>5.Callout</h3><p><strong>Callout</strong>（通常被称为“提示框”或“注记块”）是 Markdown 的一种高级扩展语法。它最初由 GitHub 和 Microsoft Learn 推广，现在已成为 <strong>Obsidian</strong>、<strong>Notion</strong> 等笔记软件的核心功能，用于创建视觉上醒目的提示、警告或建议。</p>
+<table>
+<thead>
+<tr>
+<th><strong>类型关键词</strong></th>
+<th><strong>视觉效果描述</strong></th>
+<th><strong>适用场景</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&gt; [!NOTE]</code></td>
+<td>蓝色 / 铅笔图标</td>
+<td>补充说明、一般笔记</td>
+</tr>
+<tr>
+<td><code>&gt; [!TIP]</code></td>
+<td>绿色 / 灯泡图标</td>
+<td>技巧、建议、更好的做法</td>
+</tr>
+<tr>
+<td><code>&gt; [!IMPORTANT]</code></td>
+<td>紫色 / 感叹号图标</td>
+<td>关键信息、核心重点</td>
+</tr>
+<tr>
+<td><code>&gt; [!WARNING]</code></td>
+<td>橙色 / 三角警告图标</td>
+<td>需要注意的潜在风险</td>
+</tr>
+<tr>
+<td><code>&gt; [!CAUTION]</code></td>
+<td>红色 / 停止图标</td>
+<td>极危险、可能导致错误的操作</td>
+</tr>
+</tbody></table>
+<h3 id="6-思维导图"><a href="#6-思维导图" class="headerlink" title="6.思维导图"></a>6.思维导图</h3><p><a target="_blank" rel="noopener" href="https://markmap.js.org/">https://markmap.js.org</a></p>
+<p>通过markdown来生成思维导图，挺实用的</p>
+<h2 id="KaTeX-数学公式语法"><a href="#KaTeX-数学公式语法" class="headerlink" title="KaTeX 数学公式语法"></a>KaTeX 数学公式语法</h2><p>KaTeX 是一个快速的数学公式渲染引擎，其语法与 LaTeX 基本一致。</p>
+<p>官网文档：<a target="_blank" rel="noopener" href="https://katex.org/docs/supported.html#math-operators">https://katex.org/docs/supported.html#math-operators</a></p>
+<p>写公式很有帮助</p>
+<h3 id="1-基础布局"><a href="#1-基础布局" class="headerlink" title="1. 基础布局"></a>1. 基础布局</h3><table>
+<thead>
+<tr>
+<th align="left">功能</th>
+<th align="left">语法</th>
+<th align="left">效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">分式</td>
+<td align="left"><code>\frac{a}{b}</code></td>
+<td align="left">$\frac{a}{b}$</td>
+</tr>
+<tr>
+<td align="left">根号</td>
+<td align="left"><code>\sqrt[n]{x}</code></td>
+<td align="left">$\sqrt[n]{x}$</td>
+</tr>
+<tr>
+<td align="left">上下标</td>
+<td align="left"><code>x^{2}_{i}</code></td>
+<td align="left">$x^{2}_{i}$</td>
+</tr>
+<tr>
+<td align="left">向量/均值</td>
+<td align="left"><code>\vec{a}, \bar{x}, \hat{y}</code></td>
+<td align="left">$\vec{a}, \bar{x}, \hat{y}$</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="2-常用符号"><a href="#2-常用符号" class="headerlink" title="2. 常用符号"></a>2. 常用符号</h3><h4 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h4><ul>
+<li><code>\alpha \beta \gamma \delta</code> -&gt; $\alpha \beta \gamma \delta$</li>
+<li><code>\theta \lambda \pi \omega</code> -&gt; $\theta \lambda \pi \omega$</li>
+<li><code>\Delta \Omega \Phi</code> -&gt; $\Delta \Omega \Phi$</li>
+</ul>
+<h4 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h4><ul>
+<li>算术：<code>\times \div \pm \mp</code> -&gt; $\times \div \pm \mp$</li>
+<li>比较：<code>\le \ge \ne \approx \equiv</code> -&gt; $\le \ge \ne \approx \equiv$</li>
+<li>集合：<code>\in \notin \cup \cap \subset \subseteq</code> -&gt; $\in \notin \cup \cap \subset \subseteq$</li>
+<li>逻辑：<code>\forall \exists \neg \implies \iff</code> -&gt; $\forall \exists \neg \implies \iff$</li>
+</ul>
+<h4 id="微积分与极限"><a href="#微积分与极限" class="headerlink" title="微积分与极限"></a>微积分与极限</h4><ul>
+<li><code>\sum_{i=1}^{n}</code> -&gt; $\sum_{i=1}^{n}$</li>
+<li><code>\int_{0}^{\infty} f(x) dx</code> -&gt; $\int_{0}^{\infty} f(x) dx$</li>
+<li><code>\lim_{x \to 0}</code> -&gt; $\lim_{x \to 0}$</li>
+<li><code>\partial \nabla \infty</code> -&gt; $\partial \nabla \infty$</li>
+</ul>
+<hr>
+<h3 id="3-矩阵与环境"><a href="#3-矩阵与环境" class="headerlink" title="3. 矩阵与环境"></a>3. 矩阵与环境</h3><h4 id="矩阵示例"><a href="#矩阵示例" class="headerlink" title="矩阵示例"></a>矩阵示例</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin{pmatrix}</span><br><span class="line">  1 &amp; 0 \\</span><br><span class="line">  0 &amp; 1</span><br><span class="line">\end{pmatrix}</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>$$<br>\begin{pmatrix}<br>  1 &amp; 0 \<br>  0 &amp; 1<br>\end{pmatrix}<br>$$</p>
+<h4 id="分段函数"><a href="#分段函数" class="headerlink" title="分段函数"></a>分段函数</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">f(x) = \begin{cases}</span><br><span class="line">  x, &amp; \text{if } x &gt; 0 \\</span><br><span class="line">  0, &amp; \text{if } x \le 0</span><br><span class="line">\end{cases}</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
+
+
+<p>$$<br>f(x) = \begin{cases}<br>  x, &amp; \text{if } x &gt; 0 \<br>  0, &amp; \text{if } x \le 0<br>\end{cases}<br>$$</p>
+<h4 id="多行对齐-Aligned"><a href="#多行对齐-Aligned" class="headerlink" title="多行对齐 (Aligned)"></a>多行对齐 (Aligned)</h4><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin{aligned}</span><br><span class="line">  (a+b)^2 &amp;= a^2 + 2ab + b^2 \\</span><br><span class="line">          &amp;= a^2 + b^2 + 2ab</span><br><span class="line">\end{aligned}</span><br><span class="line">$$</span><br></pre></td></tr></tbody></table></figure>
+
+<p>$$<br>\begin{aligned}<br>  (a+b)^2 &amp;= a^2 + 2ab + b^2 \<br>          &amp;= a^2 + b^2 + 2ab<br>\end{aligned}</p>
+<h2 id=""><a href="#" class="headerlink" title="$$"></a>$$</h2><h3 id="4-字体样式"><a href="#4-字体样式" class="headerlink" title="4. 字体样式"></a>4. 字体样式</h3><ul>
+<li><code>\mathbb{R}</code> -&gt; $\mathbb{R}$ (实数集)</li>
+<li><code>\mathcal{L}</code> -&gt; $\mathcal{L}$ (拉普拉斯变换/花体)</li>
+<li><code>\mathbf{v}</code> -&gt; $\mathbf{v}$ (粗体向量)</li>
+<li><code>\text{文字}</code> -&gt; $\text{在公式中插入普通文字}$</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YU030X.github.io">YU030X</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yu030x.github.io/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/">https://yu030x.github.io/2026/01/16/md语法学习/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YU030X.github.io" target="_blank">YU030X的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AF%AD%E6%B3%95/">语法</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img class="cover" src="/img/%E5%BE%8B%E5%B8%881.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">CTFSHOW-2026元旦跨年欢乐赛</div></div><div class="info-2"><div class="info-item-1">新年快乐！期末复习间偷闲做了一两道</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">YU030X</div><div class="author-info-description">哈哈哈哈</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yu030x"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是...一个博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#markdown%E8%AF%AD%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">markdown语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%87%E6%9C%AC%E6%A0%B7%E5%BC%8F%E4%B8%8E%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">1. 文本样式与结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%97%E8%A1%A8%E4%B8%8E%E4%BB%BB%E5%8A%A1"><span class="toc-number">1.2.</span> <span class="toc-text">2. 列表与任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%93%BE%E6%8E%A5%E4%B8%8E%E5%9B%BE%E7%89%87"><span class="toc-number">1.3.</span> <span class="toc-text">3. 链接与图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BB%A3%E7%A0%81%E8%AF%AD%E6%B3%95"><span class="toc-number">1.4.</span> <span class="toc-text">4.代码语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Callout"><span class="toc-number">1.5.</span> <span class="toc-text">5.Callout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE"><span class="toc-number">1.6.</span> <span class="toc-text">6.思维导图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KaTeX-%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">KaTeX 数学公式语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9F%BA%E7%A1%80%E5%B8%83%E5%B1%80"><span class="toc-number">2.1.</span> <span class="toc-text">1. 基础布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B8%B8%E7%94%A8%E7%AC%A6%E5%8F%B7"><span class="toc-number">2.2.</span> <span class="toc-text">2. 常用符号</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D"><span class="toc-number">2.2.1.</span> <span class="toc-text">希腊字母</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.2.2.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AE%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9E%81%E9%99%90"><span class="toc-number">2.2.3.</span> <span class="toc-text">微积分与极限</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9F%A9%E9%98%B5%E4%B8%8E%E7%8E%AF%E5%A2%83"><span class="toc-number">2.3.</span> <span class="toc-text">3. 矩阵与环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9F%A9%E9%98%B5%E7%A4%BA%E4%BE%8B"><span class="toc-number">2.3.1.</span> <span class="toc-text">矩阵示例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%AE%B5%E5%87%BD%E6%95%B0"><span class="toc-number">2.3.2.</span> <span class="toc-text">分段函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E5%AF%B9%E9%BD%90-Aligned"><span class="toc-number">2.3.3.</span> <span class="toc-text">多行对齐 (Aligned)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">$$</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F"><span class="toc-number">3.1.</span> <span class="toc-text">4. 字体样式</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习"><img src="/img/%E5%BE%8B%E5%B8%883.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown语法学习"></a><div class="content"><a class="title" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习">markdown语法学习</a><time datetime="2026-01-16T11:17:03.000Z" title="发表于 2026-01-16 19:17:03">2026-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img src="/img/%E5%BE%8B%E5%B8%881.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CTFSHOW-2026元旦跨年欢乐赛"></a><div class="content"><a class="title" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛">CTFSHOW-2026元旦跨年欢乐赛</a><time datetime="2026-01-09T05:38:13.000Z" title="发表于 2026-01-09 13:38:13">2026-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/10/ctfshow-web1-20/" title="CTFSHOW WEB1-20 信息收集"><img src="/img/%E5%BE%8B%E5%B8%888.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CTFSHOW WEB1-20 信息收集"></a><div class="content"><a class="title" href="/2025/12/10/ctfshow-web1-20/" title="CTFSHOW WEB1-20 信息收集">CTFSHOW WEB1-20 信息收集</a><time datetime="2025-12-09T16:00:00.000Z" title="发表于 2025-12-10 00:00:00">2025-12-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/01/isctf2025-wp/" title="ISCTF2025 WP"><img src="/img/%E5%BE%8B%E5%B8%887.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ISCTF2025 WP"></a><div class="content"><a class="title" href="/2025/12/01/isctf2025-wp/" title="ISCTF2025 WP">ISCTF2025 WP</a><time datetime="2025-11-30T16:00:00.000Z" title="发表于 2025-12-01 00:00:00">2025-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/19/ctfshow-web%E9%A2%98/" title="ctfshow-web题"><img src="/img/%E5%BE%8B%E5%B8%886.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ctfshow-web题"></a><div class="content"><a class="title" href="/2025/11/19/ctfshow-web%E9%A2%98/" title="ctfshow-web题">ctfshow-web题</a><time datetime="2025-11-18T16:00:16.000Z" title="发表于 2025-11-19 00:00:16">2025-11-19</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">©&nbsp;2024 - 2026 By YU030X</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></span></div><div class="footer_custom_text">Keep Moving!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const config = mermaidSrc.dataset.config ? JSON.parse(mermaidSrc.dataset.config) : {}
+      if (!config.theme) {
+        config.theme = theme
+      }
+      const mermaidThemeConfig = `%%{init: ${JSON.stringify(config)}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (false) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script></div><script defer="" src="/live2d-widget/autoload.js"></script><script async="" data-pjax="" src="/"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"></div><hr><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
