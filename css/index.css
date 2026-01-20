@@ -1625,7 +1625,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 16px;
+  --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -1924,7 +1924,7 @@ blockquote > :last-child {
 .container pre,
 .container code {
   font-size: 14px;
-  font-family: JetBrainsMapleMono !important;
+  font-family: JetBrains Mono Maple !important;
   border-radius: 6px;
 }
 .container code {
