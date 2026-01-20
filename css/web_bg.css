@@ -1,0 +1,20 @@
+/* 背景壁纸模糊：backdrop-filter 版本 */
+#web_bg {
+    position: fixed;
+    inset: 0;
+    z-index: -999;
+}
+
+#web_bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    /* 模糊背景 */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    /* 轻微加暗/加亮，避免糊完像雾霾 */
+    background: rgba(255, 255, 255, 0.08);
+    pointer-events: none;
+}
