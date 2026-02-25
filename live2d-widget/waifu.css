@@ -28,7 +28,7 @@
 /* 看板娘主容器 */
 #waifu {
 	bottom: -1000px; /* 初始位置在屏幕下方（隐藏） */
-	left: 0; /* 右侧对齐 */
+	left: -50px; /* 右侧对齐 */
 	line-height: 0; /* 行高为0 */
 	margin-bottom: -10px; /* 底部外边距 */
 	position: fixed; /* 固定定位 */
@@ -93,7 +93,7 @@
 	color: #aaa; /* 灰色 */
 	opacity: 0; /* 默认隐藏 */
 	position: absolute; /* 绝对定位 */
-	left: 50px; /* 距离左侧50像素 */
+	left: 60px; /* 距离左侧50像素 */
 	top: 100px; /* 距离顶部100像素 */
 	transition: opacity 1s; /* 透明度过渡动画 */
 }
